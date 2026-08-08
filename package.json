@@ -1,0 +1,51 @@
+{
+  "name": "mms-forced-align",
+  "version": "0.1.0",
+  "description": "CTC forced alignment (word-level timestamps) using Meta's MMS forced-aligner model, in Node.js/TypeScript.",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:unit": "vitest run --exclude test/model.inference.test.ts --exclude test/align.golden.test.ts",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit -p tsconfig.test.json"
+  },
+  "keywords": [
+    "forced-alignment",
+    "ctc",
+    "wav2vec2",
+    "mms",
+    "captions",
+    "subtitles",
+    "speech-to-text",
+    "karaoke",
+    "word-timestamps"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "onnxruntime-node": "^1.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "node-wav": "^0.0.2",
+    "tsup": "^8.2.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
