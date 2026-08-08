@@ -5,6 +5,7 @@ dist/
 __pycache__/
 *.pyc
 .claude/
+*.tgz
 
 # Golden fixtures are generated locally from your own audio — never bundle
 # third-party audio into the repo. See test/fixtures/README.md.
