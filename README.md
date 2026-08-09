@@ -7,8 +7,10 @@ figures out *when* each one happens.
 
 Uses Meta's MMS (Massively Multilingual Speech) forced-aligner acoustic model
 (via an ONNX export) for the neural forward pass, and a from-scratch
-TypeScript CTC Viterbi decoder for the alignment itself — no published JS
-implementation of this existed before, only Python.
+TypeScript CTC Viterbi decoder for the alignment itself. Other forced-aligner
+packages exist in JS (e.g. DTW-based approaches), but no published JS
+implementation of *MMS-based CTC forced alignment* existed before this —
+`torchaudio.pipelines.MMS_FA` and similar tools were Python-only.
 
 ## Install
 
@@ -61,6 +63,20 @@ const words = transcript.split(" ").map((w) => w.replace(/[^\w']/g, ""));
   0.0ms across all 37 golden-fixture words with `quantized: false`. Use
   `quantized: false` when boundary-accurate timing (e.g. karaoke, subtitle
   sync at pauses) matters more than download size or latency.
+
+  **Recommended for most callers:** an independent CPU benchmark against
+  `torchaudio.pipelines.MMS_FA` (116-word Hinglish transcript, 3 runs per
+  config) found `quantized: false` faster to align than both the default
+  quantized model (21.33s vs 26.97s avg, ~21% faster) and Python/torchaudio's
+  fp32 pipeline (~42% faster), while using less peak memory than the
+  quantized model would suggest (~1.8GB vs Python's ~2.6GB) and matching
+  Python's word timings to sub-millisecond average accuracy. The quantized
+  model's only clear advantage is a smaller download/lower load latency —
+  worth it mainly for cold-start-sensitive, single-shot invocations (e.g. a
+  serverless function aligning one short clip per call). For a long-running
+  process that loads the aligner once and reuses it (the pattern this
+  package is designed for — see "Reuse one `aligner`" above), pass
+  `quantized: false`.
 
 ## Scope (v1)
 
