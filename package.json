@@ -38,6 +38,15 @@
     "word-timestamps"
   ],
   "license": "MIT",
+  "author": "Arham Sayyed",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arham-sayyed/mms-forced-align.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arham-sayyed/mms-forced-align/issues"
+  },
+  "homepage": "https://github.com/arham-sayyed/mms-forced-align#readme",
   "dependencies": {
     "onnxruntime-node": "^1.19.0"
   },
