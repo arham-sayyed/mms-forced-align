@@ -1,0 +1,163 @@
+[
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "input": "आज एल्बैक में मैंने काफी कुछ ट्राई किया। मुझे पर्सनली ये काफी पसंद आया।",
+    "uroman_output": "aaj elbaik mem maimne kaaphii kuch ttraaii kiyaa. mujhe parsanalii ye kaaphii pasamd aayaa."
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "input": "आज मी खूप छान अनुभव घेतला आणि मला हे खूप आवडले.",
+    "uroman_output": "aaj mii khuup chaan anubhav ghetalaa aanni malaa he khuup aavaddale."
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "input": "आज मैले धेरै राम्रो अनुभव गरें र मलाई यो धेरै मन पर्यो।",
+    "uroman_output": "aaj maile dherai raamro anubhav garem ra malaaii yo dherai man paryo."
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "input": "अद्य मया बहु सुन्दरम् अनुभवं प्राप्तम्।",
+    "uroman_output": "adya mayaa bahu sundaram anubhavam praaptam."
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "input": "आइ हम बहुत नीक अनुभव कयलहुं।",
+    "uroman_output": "aai ham bahut niik anubhav kayalahum."
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "input": "अज्ज मैं बड़ा वधिया अनुभव कीता।",
+    "uroman_output": "ajja maim baddaa vadhiyaa anubhav kiitaa."
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "input": "आयज हांव खूब बरे अणभव घेतलो.",
+    "uroman_output": "aayaj haamv khuub bare annabhav ghetalo."
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "input": "আজ আমি অনেক ভালো অভিজ্ঞতা পেয়েছি এবং আমার এটা খুব ভালো লেগেছে।",
+    "uroman_output": "aaj aami anek bhaalo abhijnyataa peyechhi ebang aamaar ettaa khub bhaalo legechhe."
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "input": "আজি মই বহুত ভাল অভিজ্ঞতা পালোঁ।",
+    "uroman_output": "aaji mai bahut bhaal abhijnyataa paalon."
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "input": "ਅੱਜ ਮੈਂ ਬਹੁਤ ਵਧੀਆ ਅਨੁਭਵ ਲਿਆ ਅਤੇ ਮੈਨੂੰ ਇਹ ਬਹੁਤ ਪਸੰਦ ਆਇਆ।",
+    "uroman_output": "ajja maim bahut vadhiiaa anubhav liaa atee mainuum ih bahut pasamd aaiaa."
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "input": "આજે મેં ખૂબ સરસ અનુભવ કર્યો અને મને તે ખૂબ ગમ્યું.",
+    "uroman_output": "aaje mem khuub saras anubhav karyo ane mane te khuub gamyum."
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "input": "ଆଜି ମୁଁ ବହୁତ ଭଲ ଅନୁଭବ କଲି ଏବଂ ମୋତେ ଏହା ବହୁତ ଭଲ ଲାଗିଲା।",
+    "uroman_output": "aaji mum bahuta bhala anubhaba kali ebam mote ehaa bahuta bhala laagilaa."
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "input": "இன்று நான் மிகவும் நல்ல அனுபவத்தைப் பெற்றேன், எனக்கு இது மிகவும் பிடித்தது.",
+    "uroman_output": "inru naan mikavum nalla anupavattaip perreen, enakku itu mikavum pidittatu."
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "input": "ఈరోజు నేను చాలా మంచి అనుభవం పొందాను మరియు నాకు ఇది చాలా నచ్చింది.",
+    "uroman_output": "iirooju neenu caalaa mamci anubhavam pomdaanu mariyu naaku idi caalaa naccimdi."
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "input": "ಇಂದು ನಾನು ತುಂಬಾ ಒಳ್ಳೆಯ ಅನುಭವ ಪಡೆದೆ ಮತ್ತು ನನಗೆ ಇದು ತುಂಬಾ ಇಷ್ಟವಾಯಿತು.",
+    "uroman_output": "imdu naanu tumbaa olllleya anubhava paddede mattu nanage idu tumbaa issttavaayitu."
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "input": "ഇന്ന് ഞാൻ വളരെ നല്ല അനുഭവം നേടി, എനിക്ക് ഇത് വളരെ ഇഷ്ടപ്പെട്ടു.",
+    "uroman_output": "inn nyaana vallare nalla anubhavam neetti, enikk it vallare issttappettttu."
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "script": "Perso-Arabic",
+    "input": "آج میں نے بہت اچھا تجربہ کیا اور مجھے یہ بہت پسند آیا۔",
+    "uroman_output": "aj min nye bht atchha tjrbh kia awr mjhye ih bht psnd aia."
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "script": "Perso-Arabic",
+    "input": "اَز مےٚ بہٕ ژھ اچھا تجربہ کرہ.",
+    "uroman_output": "aaz myev bh' jh atchha tjrbh krh."
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "script": "Perso-Arabic",
+    "input": "اڄ مون کي تمام سٺو تجربو ٿيو۽ مون کي اهو تمام پسند آيو.",
+    "uroman_output": "ady mwn ky tmam sttw tjrbw tyw& mwn ky ahw tmam psnd ayw."
+  },
+  {
+    "lang": "sat",
+    "lcode": "sat",
+    "script": "OlChiki",
+    "input": "ᱛᱮᱦᱮᱸ ᱤᱧ ᱟᱨᱮ ᱵᱮᱥ ᱟᱱᱩᱵᱷᱚᱣ ᱧᱟᱢ ᱠᱮᱰᱟᱹᱭ.",
+    "uroman_output": "tlhlᱸ lny lrl bls lnlbhlw nylm klddlᱹy."
+  },
+  {
+    "lang": "mni",
+    "lcode": "mni",
+    "script": "MeeteiMayek",
+    "input": "ꯅꯨꯪꯉꯥꯏꯗ ꯑꯩꯅꯥ ꯌꯥꯝꯅꯥ ꯐꯖꯕ ꯑꯃꯥ ꯐꯪꯈ꯭ꯔꯦ.",
+    "uroman_output": "nunapnungnganapid acheinapnanap yaanapmnanap phjb amanap phnungkhryenap."
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "input": "दिनै आं बड़ो गोबां अनुभव मोनबाय आरो एथाय आंनि गोबां सोमोन्दो जागाय।",
+    "uroman_output": "dinai aam baddo gobaam anubhav monabaay aaro ethaay aamni gobaam somondo jaagaay."
+  },
+  {
+    "lang": "en",
+    "lcode": "eng",
+    "script": "Latin",
+    "input": "Today I had a great experience and I liked it very much.",
+    "uroman_output": "Today I had a great experience and I liked it very much."
+  }
+]
