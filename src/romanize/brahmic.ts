@@ -110,7 +110,7 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
     if (rawRom === undefined) {
       // Chandrabindu (nasalization mark) is absent from uroman's own
       // per-script auto-table entirely -- see plan Task-list "Known gaps" #2.
-      if (/CANDRABINDU/i.test(c) === false && isCandrabinduChar(c)) {
+      if (isCandrabinduChar(c)) {
         units.push({ rom: "n", pending: false, precededByVirama: prevWasVirama });
         prevWasVirama = false;
         i += 1;
@@ -156,10 +156,37 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
   return out;
 }
 
-// Placeholder codepoint check for candrabindu -- see Task 5, which gives this
-// a real implementation once Bengali/Oriya test cases are in place. Devanagari
-// candrabindu is U+0951..U+0952 range historically but varies by script; do
-// not guess here, resolve empirically against fixtures in Task 5.
-function isCandrabinduChar(_c: string): boolean {
-  return false;
+// Candrabindu (nasalization mark) codepoints, one per Brahmic script's
+// Unicode block. Each script's block reserves a fixed slot for it (the first
+// combining sign after the independent-vowel range); confirmed against the
+// Unicode charts (https://www.unicode.org/charts/) for the scripts this
+// engine currently supports:
+//   Devanagari U+0901, Bengali U+0981, Gurmukhi U+0A01 (named "ADAK BINDI",
+//   not "CANDRABINDU", but it's the same nasalization role), Gujarati
+//   U+0A81, Oriya U+0B01.
+// Tamil, Telugu, Kannada, and Malayalam do not encode a distinct candrabindu
+// character (Telugu/Kannada/Malayalam use anusvara for this purpose; Tamil
+// has neither), so they're intentionally omitted here rather than guessed.
+const CANDRABINDU_CODEPOINTS = new Set([0x0901, 0x0981, 0x0a01, 0x0a81, 0x0b01]);
+
+function isCandrabinduChar(c: string): boolean {
+  const cp = c.codePointAt(0);
+  return cp !== undefined && CANDRABINDU_CODEPOINTS.has(cp);
 }
+
+// NOTE (Task 5 follow-up, verified against real uroman + its data tables --
+// see scripts/extract-uroman-data.py's UnicodeDataOverwrite.txt handling,
+// added in this same task): the "n" pushed above is only actually correct
+// for Bengali. Real uroman's per-script romanization tables give Devanagari
+// and Oriya candrabindu "m" (not "n"), and Gurmukhi/Gujarati's
+// candrabindu-equivalent chars (adak bindi / candrabindu) have *no*
+// romanization entry anywhere in uroman's data at all -- confirmed
+// empirically (`uroman.romanize_string("ਁਪ", lcode="pan")` etc.) that real
+// uroman silently contributes nothing for them, not "n". In practice this
+// isCandrabinduChar() branch is now unreachable for Devanagari, Bengali, and
+// Oriya, because scripts/extract-uroman-data.py's UnicodeDataOverwrite.txt
+// fix (also added in this task) already populates chars[] with each
+// script's correct value for those three, so the char lookup above resolves
+// before ever reaching this fallback. It remains reachable (and wrong) only
+// for Gurmukhi/Gujarati, which are out of this task's tested scope --
+// revisit this hardcoded "n" when those scripts' task comes up.

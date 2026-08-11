@@ -11,6 +11,7 @@ import sys
 import os
 import re
 import json
+import unicodedata
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -92,6 +93,52 @@ def load_auto_table(path):
     return entries
 
 
+def dequote(s):
+    """Strips one layer of matching double quotes, as used by uroman's ::r /
+    ::t values for literal-space and empty-string targets (e.g. '""' -> '',
+    '" "' -> ' ')."""
+    if s is not None and len(s) >= 2 and s[0] == '"' and s[-1] == '"':
+        return s[1:-1]
+    return s
+
+
+def load_overwrite_table(path):
+    """Parses UnicodeDataOverwrite.txt (::u <hex-codepoint> ::r <target> format)
+    into a list of (source_char, target_string) pairs, preserving file order.
+
+    uroman.py's load_resource_files() loads this file *between*
+    romanization-auto-table.txt and romanization-table.txt (see
+    uroman.py's load_resource_files(), which calls load_rom_file() on
+    'romanization-auto-table.txt' (provenance 'ud'), then
+    'UnicodeDataOverwrite.txt' (provenance 'ow'), then
+    'romanization-table.txt' (provenance 'man')) and its entries override
+    the auto-table for the many single characters that have no auto-table
+    entry at all (candrabindu, visarga, avagraha, om, stress marks, ...) or
+    where uroman's maintainers found the auto-generated Unicode-name-derived
+    value wrong or ambiguous for actual use (e.g. Bengali CA/CHA needing a
+    ch/chh distinction from k/kh-style aspirate pairs, or Bengali anusvara
+    needing 'ng' rather than the generic 'm'). This file was previously not
+    read by this extraction script at all, which silently dropped all of
+    these corrections."""
+    entries = []
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            if line.startswith("#") or not line.strip():
+                continue
+            line = re.sub(r"\s{2,}#.*$", "", line)
+            fields = parse_double_colon_line(line)
+            u = fields.get("u")
+            r = fields.get("r")
+            if u is None or r is None:
+                continue
+            try:
+                cp = int(u, 16)
+            except ValueError:
+                continue
+            entries.append((chr(cp), dequote(r)))
+    return entries
+
+
 def main():
     if len(sys.argv) != 3:
         print(__doc__)
@@ -103,11 +150,19 @@ def main():
     script_props = load_script_char_props(os.path.join(data_dir, "UnicodeDataProps.txt"))
 
     auto_entries = load_auto_table(os.path.join(data_dir, "romanization-auto-table.txt"))
+    overwrite_entries = load_overwrite_table(os.path.join(data_dir, "UnicodeDataOverwrite.txt"))
     exception_entries = load_rom_table(os.path.join(data_dir, "romanization-table.txt"))
 
     # Build a combined char -> target map per script: auto-table first, then
-    # exceptions override (exceptions file is loaded second by uroman itself,
-    # see uroman.py's load_rom_data(), so it takes precedence on conflicts).
+    # UnicodeDataOverwrite.txt, then exceptions -- this mirrors uroman.py's
+    # own load_resource_files(), which loads romanization-auto-table.txt
+    # (provenance 'ud'), then UnicodeDataOverwrite.txt (provenance 'ow'),
+    # then romanization-table.txt (provenance 'man'), each later file
+    # overriding same-character entries from an earlier one. Previously this
+    # script skipped UnicodeDataOverwrite.txt entirely, which silently
+    # dropped every correction it makes -- including many single chars (e.g.
+    # candrabindu, visarga, avagraha, om) that have *no* auto-table entry at
+    # all and would otherwise be reported as "missing" by this engine.
     # We keep BOTH single-char and multi-char (e.g. nukta sequences) entries;
     # the JS lookup must try multi-char sequences first (longest match).
     for script_name, props in script_props.items():
@@ -118,12 +173,24 @@ def main():
             if len(s) == 1 and s in char_set:
                 table[s] = t
                 cats[s] = cat
+        for s, t in overwrite_entries:
+            if len(s) == 1 and s in char_set:
+                table[s] = t
+                # Category is not carried by UnicodeDataOverwrite.txt itself;
+                # most of its entries are combining marks (candrabindu,
+                # anusvara, visarga, stress marks, ...), not letters, so
+                # defaulting to "Lo" here would be actively wrong (it would
+                # make e.g. candrabindu eligible for default-vowel insertion
+                # as if it were a bare consonant). Compute the real Unicode
+                # General Category instead -- it's authoritative and uses the
+                # same short codes (Lo/Lu/Mn/Mc/...) as the auto-table's own
+                # ::cat field.
+                cats[s] = unicodedata.category(s)
         multichar = {}
         for s, t in exception_entries:
             if len(s) == 1 and s in char_set:
-                table[s] = t  # single-char override (category unknown from this
-                # file; keep whatever auto-table said, or default to Lo if new)
-                cats.setdefault(s, "Lo")
+                table[s] = t  # single-char override
+                cats[s] = unicodedata.category(s)
             elif len(s) > 1:
                 if s[0] in char_set:
                     multichar[s] = t
