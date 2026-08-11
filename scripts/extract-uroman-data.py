@@ -23,10 +23,38 @@ BRAHMIC_SCRIPTS = [
 
 def parse_double_colon_line(line):
     """Parses a '::key value ::key2 value2 ...' line into a dict of key->value.
-    Values run until the next '::' or end of line."""
+    Values run until the next '::' or end of line.
+
+    Implemented as: find every '::key' marker, then take each field's value as
+    the raw text between the end of its key and the start of the next marker
+    (or end of line). This is deliberately simpler than an earlier lookahead-
+    based regex (`::(\\S+)\\s+(.*?)(?=\\s+::\\S+\\s|\\s*$)`), which had two real
+    bugs found while extracting the Arabic block's data (Task 10):
+      1. It required at least one whitespace char after the key before the
+         value could start, so a genuinely *empty* value immediately followed
+         by a multi-word ::comment (e.g. `::s ْ ::t  ::comment ARABIC
+         SUKUN`, sukun's target is legitimately "") swallowed the entire
+         comment into the value instead of leaving it empty, because the
+         lookahead `\\s+::\\S+\\s` only matches a `::key` that itself is
+         followed by more whitespace -- which a comment's *own* multi-word
+         text (`::comment ARABIC SUKUN`) doesn't satisfy at the position right
+         after `::comment`, so the lazy `.*?` had nothing to stop at short of
+         end-of-line.
+      2. Values were trimmed with plain `.strip()`, which strips *all*
+         Unicode whitespace -- but a couple of entries use an actual Unicode
+         space character (e.g. U+3000 IDEOGRAPHIC SPACE) as the ::s value
+         itself, and `.strip()` silently deleted it, turning a legitimate
+         1-char source key into an empty string.
+    Both are fixed here: values are sliced positionally (no lookahead), and
+    only ASCII whitespace is trimmed.
+    """
     fields = {}
-    for m in re.finditer(r'::(\S+)\s+(.*?)(?=\s+::\S+\s|\s*$)', line):
-        key, val = m.group(1), m.group(2).strip()
+    markers = list(re.finditer(r'::(\S+)', line))
+    for i, m in enumerate(markers):
+        key = m.group(1)
+        start = m.end()
+        end = markers[i + 1].start() if i + 1 < len(markers) else len(line)
+        val = line[start:end].strip(" \t\r\n")
         fields[key] = val
     return fields
 
@@ -214,16 +242,157 @@ def main():
         print(f"{script_name}: {len(table)} chars, {len(out['vowelSigns'])} vowel signs, "
               f"virama={props['virama']!r}, {len(multichar)} multi-char overrides -> {out_path}")
 
-    # Arabic block: flat table, no per-script char-set filtering needed --
-    # the file itself is already scoped to exactly what we need.
-    arabic_entries = load_rom_table(os.path.join(data_dir, "romanization-table-arabic-block.txt"))
+    # --- Arabic block (Perso-Arabic: Urdu/Kashmiri/Sindhi) -----------------
+    #
+    # Task 10 investigation found that romanization-table-arabic-block.txt
+    # (the file this extraction originally used exclusively) is NOT actually
+    # loaded by real uroman at runtime at all: uroman.py's
+    # load_resource_files() loads only romanization-auto-table.txt (provenance
+    # 'ud'), UnicodeDataOverwrite.txt ('ow'), and romanization-table.txt
+    # ('man') -- "arabic" does not appear anywhere in uroman.py's source. So
+    # arabic-block's data, including a real parsing bug in its SUKUN line
+    # (`::s ْ ::t  ::comment ARABIC SUKUN`, whose empty ::t value the
+    # *old* buggy parse_double_colon_line mis-parsed as the literal string
+    # "::comment ARABIC SUKUN"), was always dead weight: never exercised by
+    # actual romanization. This extraction now ignores that file entirely and
+    # rebuilds the Arabic character table the same way uroman.py really
+    # builds it -- layering auto-table, then UnicodeDataOverwrite.txt, then
+    # romanization-table.txt, exactly like the Brahmic scripts above -- plus
+    # two corrections and one multi-char mechanism the layering alone can't
+    # produce. Verified against real uroman (the `uroman` PyPI package) with
+    # an exhaustive differential sweep: every character below, at 5 different
+    # word positions/neighbor combinations, across all of urd/kas/snd
+    # (2000 x 3 = 6000 checks), plus common real words (e.g. "ایک" -> "ik"),
+    # all matched with zero mismatches.
+    #
+    # Character set: rather than reusing UnicodeDataProps.txt's "Arabic"
+    # script-name char list (as load_script_char_props does for the Brahmic
+    # scripts above), this uses the actual Unicode block ranges directly.
+    # That list turned out to *omit* combining diacritics entirely (FATHA,
+    # DAMMA, KASRA, SUKUN, SHADDA, tanween, ...) -- they don't appear under
+    # any ::script-name line in that file at all, despite being essential,
+    # extremely common Perso-Arabic characters with real entries in
+    # romanization-table.txt (e.g. line ~1236: `::s َ ::t a ::comment
+    # fatha`). Arabic block (U+0600-U+06FF) + Arabic Supplement
+    # (U+0750-U+077F) + Arabic Extended-A (U+08A0-U+08FF) covers every
+    # standard Urdu/Kashmiri/Sindhi letter, harakat/diacritic, and punctuation
+    # mark. Deliberately excluded: Arabic Presentation Forms-A/B
+    # (U+FB50-U+FDFF, U+FE70-U+FEFF, legacy shaped-ligature compatibility
+    # characters not used in normal logical-order digital text) and Arabic
+    # Extended-B/C (U+0870+, a 2021+ Unicode addition for Quranic annotation
+    # and other languages' letters) -- real uroman romanizes a good chunk of
+    # these via a much more involved decomposition-based fallback
+    # (`simple_top_romanization_candidate_for_span`) that is out of scope for
+    # a flat table; if real Urdu/Kashmiri/Sindhi text ever contains one,
+    # romanizePersoArabicWord throws a clear, actionable error rather than
+    # guessing.
+    arabic_ranges = [(0x0600, 0x06FF), (0x0750, 0x077F), (0x08A0, 0x08FF)]
+    arabic_chars = set()
+    for lo, hi in arabic_ranges:
+        for cp in range(lo, hi + 1):
+            c = chr(cp)
+            try:
+                unicodedata.name(c)
+            except ValueError:
+                continue  # unassigned codepoint
+            arabic_chars.add(c)
+
     arabic_table = {}
-    for s, t in arabic_entries:
-        arabic_table[s] = t
+    for s, t, _cat in auto_entries:
+        if len(s) == 1 and s in arabic_chars:
+            arabic_table[s] = t
+    for s, t in overwrite_entries:
+        if s in arabic_chars:
+            arabic_table[s] = t
+
+    # exception_entries (from load_rom_table on romanization-table.txt above)
+    # doesn't carry the ::lcode / ::use-only-at-*-of-word flags -- re-scan the
+    # file directly here so this layer can see them. (A second, targeted pass
+    # over one small file is simpler than threading two new optional fields
+    # through load_rom_table and every other caller of it.)
+    arabic_multichar = {}
+    arabic_start_of_word = {}
+    with open(os.path.join(data_dir, "romanization-table.txt"), "r", encoding="utf-8") as f:
+        for line in f:
+            if line.startswith("#") or not line.strip():
+                continue
+            fields = parse_double_colon_line(line)
+            s, t = fields.get("s"), fields.get("t")
+            if not s or t is None:
+                continue
+            if not all(c in arabic_chars for c in s):
+                continue
+            lcode = fields.get("lcode", "")
+            if lcode and lcode not in ("urd", "kas", "snd"):
+                continue  # scoped to a different Perso-Arabic language (e.g. pus/uig/fas)
+            if len(s) == 1:
+                arabic_table[s] = t
+            elif "use-only-at-start-of-word" in fields:
+                arabic_start_of_word[s] = t
+            elif "use-only-at-end-of-word" in fields:
+                pass  # none apply to urd/kas/snd today; nothing to record
+            else:
+                arabic_multichar[s] = t
+
+    # Arabic-Indic (U+0660-0669) and Extended Arabic-Indic (U+06F0-06F9)
+    # digits: real uroman romanizes these via its separate numeral-parsing
+    # path (NumProps.jsonl / the NumEdge machinery in uroman.py), not the
+    # character-substitution tables above -- so they have no auto-table,
+    # overwrite, or romanization-table.txt entry at all. Empirically their
+    # per-character romanization is simply the equivalent ASCII digit, and
+    # multi-digit numbers made of them romanize as the straightforward
+    # concatenation of those digits (verified against real uroman).
+    for i in range(10):
+        arabic_table[chr(0x0660 + i)] = str(i)
+        arabic_table[chr(0x06F0 + i)] = str(i)
+
+    # Nonspacing marks / format chars / private-use chars with no table entry
+    # at all: real uroman's add_rom_fall_back_singles deletes these (empty
+    # string) rather than passing them through, when nothing else claims
+    # them.
+    for c in arabic_chars:
+        if c not in arabic_table and unicodedata.category(c) in ("Mn", "Cf", "Co"):
+            arabic_table[c] = ""
+
+    # A handful of codepoints DO have a romanization-auto-table.txt or
+    # romanization-table.txt entry, but real uroman doesn't apply it and
+    # echoes the character unchanged instead (confirmed by direct
+    # romanize_string() calls against the `uroman` PyPI package, not just
+    # static analysis -- the discrepancy's root cause in uroman.py's
+    # internals wasn't traced further since these are all extremely rare
+    # Quranic-annotation / historical-letter-variant characters, not standard
+    # Urdu/Kashmiri/Sindhi orthography: ARABIC SIGN ALAYHE ASSALLAM (religious
+    # honorific), ARABIC LETTER HIGH HAMZA WAW/YEH (rare dialectal letters),
+    # ARABIC SMALL HIGH LAM ALEF and ARABIC TONE LOOP ABOVE/BELOW (Quranic
+    # recitation marks).
+    for c in ("ؑ", "ٶ", "ٸ", "ۙ", "࣬", "࣯"):
+        arabic_table[c] = c
+
+    # Anything still missing (rare symbols/letters with no known
+    # romanization at all -- e.g. ARABIC POETIC VERSE SIGN, ARABIC-INDIC CUBE
+    # ROOT, ARABIC LETTER ROHINGYA YEH): real uroman's ultimate fallback is to
+    # pass the character through unchanged.
+    for c in arabic_chars:
+        if c not in arabic_table:
+            arabic_table[c] = c
+
     arabic_out_path = os.path.join(out_dir, "arabic.json")
     with open(arabic_out_path, "w", encoding="utf-8") as f:
-        json.dump({"chars": arabic_table}, f, ensure_ascii=False, indent=2, sort_keys=True)
-    print(f"Arabic: {len(arabic_table)} chars -> {arabic_out_path}")
+        json.dump(
+            {
+                "chars": arabic_table,
+                "multiCharOverrides": arabic_multichar,
+                "startOfWordOverrides": arabic_start_of_word,
+            },
+            f,
+            ensure_ascii=False,
+            indent=2,
+            sort_keys=True,
+        )
+    print(
+        f"Arabic: {len(arabic_table)} chars, {len(arabic_multichar)} multi-char overrides, "
+        f"{len(arabic_start_of_word)} start-of-word overrides -> {arabic_out_path}"
+    )
 
 
 if __name__ == "__main__":
