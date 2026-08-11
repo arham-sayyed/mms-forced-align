@@ -12,6 +12,11 @@ interface Unit {
   /** Still a bare consonant awaiting a default-vowel decision. Becomes false
    * once resolved by a vowel sign, a virama, or the final default-vowel pass. */
   pending: boolean;
+  /** True if this unit's first character immediately follows a virama in the
+   * source word (i.e. it's the second consonant of an explicit C-virama-C
+   * cluster, such as a geminate or conjunct). See deletesFinalSchwa's
+   * companion rule below for why this matters at word end. */
+  precededByVirama: boolean;
 }
 
 /**
@@ -36,6 +41,20 @@ function deletesFinalSchwa(script: BrahmicScript, lcode: string): boolean {
   return ["asm", "ben", "guj", "kas", "pan"].includes(lcode);
 }
 
+/**
+ * uroman's add_default_abugida_vowel (same source, ~line 1701-1729) checks
+ * `is-virama(prev_s_char)` (line 1718: `return base_rom_plus_vowel`) *before*
+ * it ever reaches the end-of-word / lcode schwa-deletion branch (line 1723).
+ * So a word-final bare consonant that immediately follows a virama -- i.e.
+ * the second half of an explicit C-virama-C cluster like a geminate or
+ * conjunct (e.g. Dogri अज्ज "ajja", or Hindi अक्क "akka") -- always keeps its
+ * default vowel, regardless of what deletesFinalSchwa() says for that
+ * script/lcode. This is verified as a general, script-agnostic,
+ * lcode-agnostic rule in uroman's own algorithm (confirmed empirically
+ * against hin/mar/doi with synthetic and real words alike) -- it is not a
+ * per-language or per-word special case.
+ */
+
 export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: string): string {
   const data = loadBrahmicScriptData(script);
   const { chars, categories, vowelSigns, virama, multiCharOverrides, defaultVowel } = data;
@@ -45,6 +64,7 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
   const units: Unit[] = [];
 
   let i = 0;
+  let prevWasVirama = false;
   while (i < codepoints.length) {
     let matchedLen = 0;
     let matchedRom: string | null = null;
@@ -57,7 +77,8 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
       }
     }
     if (matchedRom !== null) {
-      units.push({ rom: matchedRom, pending: CONSONANT_ONLY.test(matchedRom) });
+      units.push({ rom: matchedRom, pending: CONSONANT_ONLY.test(matchedRom), precededByVirama: prevWasVirama });
+      prevWasVirama = false;
       i += matchedLen;
       continue;
     }
@@ -67,6 +88,7 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
     if (virama !== null && c === virama) {
       const prev = units[units.length - 1];
       if (prev?.pending) prev.pending = false; // permanently: no vowel, ever
+      prevWasVirama = true;
       i += 1;
       continue;
     }
@@ -77,8 +99,9 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
         prev.rom += vowelSigns[c];
         prev.pending = false;
       } else {
-        units.push({ rom: vowelSigns[c], pending: false });
+        units.push({ rom: vowelSigns[c], pending: false, precededByVirama: prevWasVirama });
       }
+      prevWasVirama = false;
       i += 1;
       continue;
     }
@@ -88,7 +111,8 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
       // Chandrabindu (nasalization mark) is absent from uroman's own
       // per-script auto-table entirely -- see plan Task-list "Known gaps" #2.
       if (/CANDRABINDU/i.test(c) === false && isCandrabinduChar(c)) {
-        units.push({ rom: "n", pending: false });
+        units.push({ rom: "n", pending: false, precededByVirama: prevWasVirama });
+        prevWasVirama = false;
         i += 1;
         continue;
       }
@@ -102,7 +126,8 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
     }
     const rom = rawRom.startsWith("+") ? rawRom.slice(1) : rawRom;
     const isLetter = (categories[c] ?? "").startsWith("L");
-    units.push({ rom, pending: isLetter && CONSONANT_ONLY.test(rom) });
+    units.push({ rom, pending: isLetter && CONSONANT_ONLY.test(rom), precededByVirama: prevWasVirama });
+    prevWasVirama = false;
     i += 1;
   }
 
@@ -120,6 +145,8 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
     }
     if (units.length === 1) {
       out += u.rom + defaultVowel; // single-syllable word: uroman always keeps it
+    } else if (u.precededByVirama) {
+      out += u.rom + defaultVowel; // see comment on deletesFinalSchwa's companion rule above
     } else if (deletesFinalSchwa(script, lcode)) {
       out += u.rom;
     } else {
