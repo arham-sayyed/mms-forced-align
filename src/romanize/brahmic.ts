@@ -7,6 +7,34 @@ export type BrahmicScript =
 
 const CONSONANT_ONLY = /^[bcdfghjklmnpqrstvwxyz]+$/;
 
+/**
+ * Some letters' own table entry already comes with the default vowel fused
+ * on (e.g. Devanagari/Bengali/Gurmukhi/Gujarati/Oriya/Tamil/Telugu/Kannada/
+ * Malayalam NYA -> "nya", Bengali/Devanagari YYA -> "yya", Oriya YA -> "ya")
+ * rather than as a bare consonant like most letters (e.g. "n", "k"). Ported
+ * from uroman's add_default_abugida_vowel (uroman.py ~line 1652-1686), which
+ * strips a trailing default vowel from the raw romanization via two regexes
+ * -- a y-final-glide-cluster branch tried first, then a general
+ * consonant-cluster fallback -- before deciding whether the letter is a
+ * bare, vowel-pending consonant. Without this, a letter like "nya" is never
+ * recognized as pending (CONSONANT_ONLY fails on the trailing "a"), so a
+ * following vowel sign gets appended alongside it instead of replacing its
+ * baked-in default vowel: verified against real uroman, e.g. Bengali
+ * ঞা -> "nyaa" (base "ny" + vowel-sign "aa"), not "nyaaa".
+ * Confirmed empirically this only actually fires for NYA/YYA/YA-type
+ * entries across the currently-supported scripts' extracted tables -- every
+ * other letter is already a bare consonant (no trailing default vowel to
+ * strip), so this leaves all of them unchanged.
+ */
+function resolveLetterUnit(rom: string, defaultVowel: string): { rom: string; pending: boolean } {
+  if (CONSONANT_ONLY.test(rom)) return { rom, pending: true };
+  const dv = defaultVowel.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const yGlideMatch = rom.match(new RegExp(`^([cfghkmnqrstxy]?y)(?:${dv})+$`));
+  const match = yGlideMatch ?? rom.match(new RegExp(`^([bcdfghjklmnpqrstvwxyz]+)${dv}$`));
+  if (match && CONSONANT_ONLY.test(match[1])) return { rom: match[1], pending: true };
+  return { rom, pending: false };
+}
+
 interface Unit {
   rom: string;
   /** Still a bare consonant awaiting a default-vowel decision. Becomes false
@@ -189,7 +217,8 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
     }
     const rom = rawRom.startsWith("+") ? rawRom.slice(1) : rawRom;
     const isLetter = (categories[c] ?? "").startsWith("L");
-    units.push({ rom, pending: isLetter && CONSONANT_ONLY.test(rom), precededByVirama: prevWasVirama });
+    const resolved = isLetter ? resolveLetterUnit(rom, defaultVowel) : { rom, pending: false };
+    units.push({ rom: resolved.rom, pending: resolved.pending, precededByVirama: prevWasVirama });
     prevWasVirama = false;
     i += 1;
   }
