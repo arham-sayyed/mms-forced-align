@@ -12,3 +12,30 @@ describe("romanizeBrahmicWord: Gurmukhi (pan)", () => {
     });
   }
 });
+
+// Regression coverage for ADDAK doubling before an aspirated (multi-letter
+// romanized) consonant -- no current golden fixture exercises this path.
+// ADDAK doubling must copy only the FIRST letter of the following
+// consonant's romanization (e.g. "kh" -> "k"), not the whole string, per
+// real uroman's own doubling regex. Verified against real uroman
+// (python `uroman` package, lcode="pan"):
+//   ਅੱਖ -> akkha (ਖ = "kh", doubled letter "k", not "kh")
+//   ਅੱਛ -> accha (ਛ = "ch", doubled letter "c", not "ch")
+//   ਅੱਠ -> atttha (ਠ = "tth", doubled letter "t", not "tth")
+describe("romanizeBrahmicWord: Gurmukhi (pan) -- ADDAK before aspirated consonants", () => {
+  const cases: Array<[string, string]> = [
+    ["ਅੱਖ", "akkha"],
+    ["ਅੱਛ", "accha"],
+    ["ਅੱਘ", "aggha"],
+    ["ਅੱਥ", "attha"],
+    ["ਅੱਧ", "addha"],
+    ["ਅੱਭ", "abbha"],
+    ["ਅੱਠ", "atttha"],
+  ];
+
+  for (const [word, expected] of cases) {
+    it(`"${word}" -> "${expected}"`, () => {
+      expect(romanizeBrahmicWord(word, "Gurmukhi", "pan")).toBe(expected);
+    });
+  }
+});

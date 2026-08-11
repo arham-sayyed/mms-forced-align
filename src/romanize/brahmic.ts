@@ -15,7 +15,12 @@ interface Unit {
   /** True if this unit's first character immediately follows a virama in the
    * source word (i.e. it's the second consonant of an explicit C-virama-C
    * cluster, such as a geminate or conjunct). See deletesFinalSchwa's
-   * companion rule below for why this matters at word end. */
+   * companion rule below for why this matters at word end. Also set (despite
+   * the name) for the unit produced by re-processing the consonant right
+   * after a Gurmukhi ADDAK gemination mark (U+0A71) -- see the ADDAK handling
+   * in the main loop below, which reuses this same flag/exception rather
+   * than a separate one, since real uroman's word-final-vowel behavior is
+   * identical in both cases. */
   precededByVirama: boolean;
 }
 
@@ -113,13 +118,26 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
     // (e.g. pan): ਪੱਕ -> pakka keeps the final "a", not "pakk". This is the
     // exact same exception already implemented for units immediately
     // following a virama (see deletesFinalSchwa's companion comment above
-    // and the `precededByVirama` field) -- real uroman's source
-    // (uroman.py's add_default_abugida_vowel) applies literally the same
-    // `is-virama(prev_char)` check to decide this, and ADDAK's doubling
-    // mechanism (expand_rom_with_special_chars) runs on top of that
-    // already-resolved (schwa-kept) romanization. So we reuse the
-    // `prevWasVirama` / `precededByVirama` machinery for the character
-    // following ADDAK rather than inventing a parallel flag.
+    // and the `precededByVirama` field). This was verified empirically /
+    // behaviorally against real uroman output (not traced through uroman's
+    // exact source condition for ADDAK specifically -- Gurmukhi's own
+    // Scripts.txt entry declares no virama at all, so a literal
+    // `is-virama(prev_char)` match can't be confirmed by inspection; the
+    // *effect* matches the virama exception, which is why we reuse the
+    // `prevWasVirama` / `precededByVirama` machinery here rather than
+    // inventing a parallel flag).
+    //
+    // Only the FIRST character of the following consonant's romanization is
+    // doubled, not its whole (possibly multi-letter) romanization -- e.g.
+    // ਖ ("kh") doubles to "k" + "kha" = "kkha", not "kh" + "kha". This
+    // mirrors uroman's own doubling regex `(ch|[bcdfghjklmnpqrstwz])`, which
+    // captures only a single leading consonant letter (with a `ch`->`c`
+    // special case that "first character of the string" already satisfies
+    // for free, since "ch"[0] === "c"). Verified against real uroman for
+    // every aspirated consonant in Gurmukhi's table: ਅੱਖ -> akkha,
+    // ਅੱਛ -> accha, ਅੱਘ -> aggha, ਅੱਥ -> attha, ਅੱਧ -> addha,
+    // ਅੱਭ -> abbha, ਅੱਠ -> atttha (ਠ's own romanization "tth" is itself
+    // multi-letter, and only its first letter "t" gets doubled).
     if (c === "ੱ") {
       const nextC = codepoints[i + 1];
       const nextRawRom = nextC !== undefined ? chars[nextC] : undefined;
@@ -127,7 +145,7 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
         const cleanNext = nextRawRom.startsWith("+") ? nextRawRom.slice(1) : nextRawRom;
         const isLetter = (categories[nextC] ?? "").startsWith("L");
         if (isLetter && CONSONANT_ONLY.test(cleanNext)) {
-          units.push({ rom: cleanNext, pending: false, precededByVirama: prevWasVirama });
+          units.push({ rom: cleanNext.charAt(0), pending: false, precededByVirama: prevWasVirama });
           prevWasVirama = true;
           i += 1; // consume only the ADDAK mark; the next iteration reprocesses nextC normally
           continue;
