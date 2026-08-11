@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
-import sys, json, re
-sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, r'C:\Users\ARHAMS~1\AppData\Local\Temp\claude\D--dev-projects-tests-sarvaamAPI\74bd9344-85e9-4dad-a58d-765d13935ea3\scratchpad\uroman\uroman')
+import json, re, os
 import uroman as ur
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+os.chdir("..")
+
 u = ur.Uroman()
 
-with open(r'C:\Users\ARHAMS~1\AppData\Local\Temp\claude\D--dev-projects-tests-sarvaamAPI\74bd9344-85e9-4dad-a58d-765d13935ea3\scratchpad\uroman_golden_fixtures.json', encoding='utf-8') as f:
+with open("test/fixtures/romanize/golden-sentences.json", encoding="utf-8") as f:
     fixtures = json.load(f)
 
-BRAHMIC = {"Devanagari","Bengali","Gurmukhi","Gujarati","Oriya","Tamil","Telugu","Kannada","Malayalam"}
+BRAHMIC = {"Devanagari", "Bengali", "Gurmukhi", "Gujarati", "Oriya", "Tamil", "Telugu", "Kannada", "Malayalam"}
 
 out = []
 for fx in fixtures:
@@ -22,6 +24,6 @@ for fx in fixtures:
         rom = u.romanize_string(clean, lcode=fx["lcode"])
         out.append({"lang": fx["lang"], "lcode": fx["lcode"], "script": fx["script"], "word": clean, "uroman": rom})
 
-with open(r'C:\Users\ARHAMS~1\AppData\Local\Temp\claude\D--dev-projects-tests-sarvaamAPI\74bd9344-85e9-4dad-a58d-765d13935ea3\scratchpad\perword_fixtures.json', 'w', encoding='utf-8') as f:
+with open("test/fixtures/romanize/golden-words.json", "w", encoding="utf-8") as f:
     json.dump(out, f, ensure_ascii=False, indent=2)
 print("wrote", len(out), "per-word fixtures")
