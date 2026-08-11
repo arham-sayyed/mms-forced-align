@@ -1,0 +1,35 @@
+import devanagari from "./data/devanagari.json";
+import bengali from "./data/bengali.json";
+import gurmukhi from "./data/gurmukhi.json";
+import gujarati from "./data/gujarati.json";
+import oriya from "./data/oriya.json";
+import tamil from "./data/tamil.json";
+import telugu from "./data/telugu.json";
+import kannada from "./data/kannada.json";
+import malayalam from "./data/malayalam.json";
+import type { BrahmicScript } from "./brahmic";
+
+export interface BrahmicScriptData {
+  defaultVowel: string;
+  virama: string | null;
+  vowelSigns: Record<string, string>;
+  chars: Record<string, string>;
+  categories: Record<string, string>;
+  multiCharOverrides: Record<string, string>;
+}
+
+const DATA: Record<BrahmicScript, BrahmicScriptData> = {
+  Devanagari: devanagari as BrahmicScriptData,
+  Bengali: bengali as BrahmicScriptData,
+  Gurmukhi: gurmukhi as BrahmicScriptData,
+  Gujarati: gujarati as BrahmicScriptData,
+  Oriya: oriya as BrahmicScriptData,
+  Tamil: tamil as BrahmicScriptData,
+  Telugu: telugu as BrahmicScriptData,
+  Kannada: kannada as BrahmicScriptData,
+  Malayalam: malayalam as BrahmicScriptData,
+};
+
+export function loadBrahmicScriptData(script: BrahmicScript): BrahmicScriptData {
+  return DATA[script];
+}
