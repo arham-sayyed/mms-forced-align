@@ -8,8 +8,18 @@ describe("romanizeWord", () => {
     expect(romanizeWord("आज", "hi-IN")).toBe("aaj");
   });
 
-  it("passes through an already-Latin word (lowercased)", () => {
-    expect(romanizeWord("Hello", "hi-IN")).toBe("hello");
+  it("passes through an already-Latin code-switched word with case preserved", () => {
+    // Real uroman never lowercases an embedded Latin word under a non-Latin
+    // lcode: `uroman.romanize_string("मैंने Hello कहा", lcode="hin")` ->
+    // "maimne Hello kahaa" (capital H preserved). Verified against real
+    // uroman for hin, ben, and tam.
+    expect(romanizeWord("Hello", "hi-IN")).toBe("Hello");
+  });
+
+  it("preserves case for an embedded Latin word in a full non-Latin sentence", () => {
+    expect(romanizeWords(["मैंने", "Hello", "कहा"], "hi-IN")).toEqual([
+      "maimne", "Hello", "kahaa",
+    ]);
   });
 
   it("throws RomanizeError for a script that doesn't match the given language", () => {

@@ -18,8 +18,8 @@ export function romanizeWord(word: string, langCode: LanguageCode): string {
     // loud error instead of silently mangled output. Real uroman leaves
     // already-Latin text's casing untouched (verified against
     // golden-sentences.json's "en" fixture: "Today I had..." stays
-    // capitalized) -- unlike the code-switch fallback below, which
-    // deliberately lowercases.
+    // capitalized) -- same case-preserving treatment as the code-switch
+    // fallback below.
     const detected = detectScript(cleaned);
     if (detected !== "Latin") {
       throw new RomanizeError(
@@ -32,8 +32,12 @@ export function romanizeWord(word: string, langCode: LanguageCode): string {
   const detected = detectScript(cleaned);
   if (detected === "Latin") {
     // Code-switched word (e.g. an English brand name inside an Indic
-    // sentence) -- pass through rather than erroring.
-    return cleaned.toLowerCase();
+    // sentence) -- pass through rather than erroring. Real uroman never
+    // lowercases an embedded Latin word under a non-Latin lcode (verified:
+    // `uroman.romanize_string("मैंने Hello कहा", lcode="hin")` ->
+    // "maimne Hello kahaa", capital H preserved), so this must match the
+    // en-IN branch above and preserve case rather than lowercase.
+    return cleaned;
   }
   if (detected !== expectedScript) {
     throw new RomanizeError(
