@@ -16,6 +16,12 @@ export interface BrahmicScriptData {
   chars: Record<string, string>;
   categories: Record<string, string>;
   multiCharOverrides: Record<string, string>;
+  /** Chars whose Unicode name contains "VOCALIC" -- see brahmic.ts's
+   * word-internal vocalic rule (uroman.py line 1732). */
+  vocalicChars: string[];
+  /** Chars whose Unicode name contains "NUKTA" -- see brahmic.ts's nukta
+   * handling (uroman.py lines 1342 and 1710-1717). */
+  nuktaChars: string[];
 }
 
 const DATA: Record<BrahmicScript, BrahmicScriptData> = {

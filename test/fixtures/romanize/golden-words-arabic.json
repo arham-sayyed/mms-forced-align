@@ -62,12 +62,6 @@
   {
     "lang": "ur",
     "lcode": "urd",
-    "word": "بہت",
-    "uroman": "bht"
-  },
-  {
-    "lang": "ur",
-    "lcode": "urd",
     "word": "پسند",
     "uroman": "psnd"
   },
@@ -164,26 +158,8 @@
   {
     "lang": "sd",
     "lcode": "snd",
-    "word": "مون",
-    "uroman": "mwn"
-  },
-  {
-    "lang": "sd",
-    "lcode": "snd",
-    "word": "کي",
-    "uroman": "ky"
-  },
-  {
-    "lang": "sd",
-    "lcode": "snd",
     "word": "اهو",
     "uroman": "ahw"
-  },
-  {
-    "lang": "sd",
-    "lcode": "snd",
-    "word": "تمام",
-    "uroman": "tmam"
   },
   {
     "lang": "sd",
@@ -196,5 +172,653 @@
     "lcode": "snd",
     "word": "آيو",
     "uroman": "ayw"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "اردو",
+    "uroman": "ardw"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "زبان",
+    "uroman": "zban"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "خوبصورت",
+    "uroman": "khwbswrt"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "ہے۔",
+    "uroman": "hye."
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "موسم",
+    "uroman": "mwsm"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "بچے",
+    "uroman": "btchye"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "اسکول",
+    "uroman": "askwl"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "پڑھ",
+    "uroman": "prrh"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "رہے",
+    "uroman": "rhye"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "ہیں۔",
+    "uroman": "hin."
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "کسان",
+    "uroman": "ksan"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "کھیتوں",
+    "uroman": "khitwn"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "کام",
+    "uroman": "kam"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "کر",
+    "uroman": "kr"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "میٹھا",
+    "uroman": "mittha"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "کھانا",
+    "uroman": "khana"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "سورج",
+    "uroman": "swrj"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "مشرق",
+    "uroman": "mshrq"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "سے",
+    "uroman": "sye"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "طلوع",
+    "uroman": "tlw'"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "ہوتا",
+    "uroman": "hwta"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "اس",
+    "uroman": "as"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "کتاب",
+    "uroman": "ktab"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "ختم",
+    "uroman": "khtm"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "کی۔",
+    "uroman": "ki."
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "ہمارے",
+    "uroman": "hmarye"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "گاؤں",
+    "uroman": "gawn"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "ہر",
+    "uroman": "hr"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "سال",
+    "uroman": "sal"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "بڑا",
+    "uroman": "brra"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "میلہ",
+    "uroman": "milh"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "لگتا",
+    "uroman": "lgta"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "ریل",
+    "uroman": "ril"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "گاڑی",
+    "uroman": "garri"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "اسٹیشن",
+    "uroman": "asttishn"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "پر",
+    "uroman": "pr"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "وقت",
+    "uroman": "wqt"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "پہنچی۔",
+    "uroman": "phntchi."
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "والدہ",
+    "uroman": "waldh"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "باورچی",
+    "uroman": "bawrtchi"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "خانے",
+    "uroman": "khanye"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "بنا",
+    "uroman": "bna"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "رہی",
+    "uroman": "rhi"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "طلبہ",
+    "uroman": "tlbh"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "امتحان",
+    "uroman": "amthan"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "کی",
+    "uroman": "ki"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "تیاری",
+    "uroman": "tiari"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "ایک",
+    "uroman": "ik"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "اچھی",
+    "uroman": "atchhi"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "انسان",
+    "uroman": "ansan"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "بہترین",
+    "uroman": "bhtrin"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "دوست",
+    "uroman": "dwst"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "ہوتی",
+    "uroman": "hwti"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "سنڌي",
+    "uroman": "sndy"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "ٻولي",
+    "uroman": "bwly"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "مٺي",
+    "uroman": "mtty"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "آهي",
+    "uroman": "ahy"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "موسم",
+    "uroman": "mwsm"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "ڏاڍو",
+    "uroman": "daddw"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "ٻار",
+    "uroman": "bar"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "اسڪول",
+    "uroman": "askwl"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "۾",
+    "uroman": "men"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "پڙهن",
+    "uroman": "prhn"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "ٿا",
+    "uroman": "ta"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "هاري",
+    "uroman": "hary"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "ٻنيءَ",
+    "uroman": "bny'a"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "ڪم",
+    "uroman": "km"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "ڪري",
+    "uroman": "kry"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "رهيا",
+    "uroman": "rhya"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "آهن",
+    "uroman": "ahn"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "مٺاڻ",
+    "uroman": "mttarn"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "کائڻ",
+    "uroman": "kayern"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "گهڻو",
+    "uroman": "ghrnw"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "سج",
+    "uroman": "sj"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "اوڀر",
+    "uroman": "awbr"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "کان",
+    "uroman": "kan"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "اڀري",
+    "uroman": "abry"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "ٿو",
+    "uroman": "tw"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "ماءُ",
+    "uroman": "ma'u"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "باورچي",
+    "uroman": "bawrtchy"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "خاني",
+    "uroman": "khany"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "ماني",
+    "uroman": "many"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "پچائي",
+    "uroman": "ptchayey"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "رهي",
+    "uroman": "rhy"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "شاگرد",
+    "uroman": "shagrd"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "امتحان",
+    "uroman": "amthan"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "جي",
+    "uroman": "jy"
+  },
+  {
+    "lang": "sd",
+    "lcode": "snd",
+    "word": "تياري",
+    "uroman": "tyary"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "کٲشُر",
+    "uroman": "kashur"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "زبان",
+    "uroman": "zban"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "چھِ",
+    "uroman": "tchhi"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "بۆڈ",
+    "uroman": "boedd"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "خوبصورت",
+    "uroman": "khwbswrt"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "چھُ",
+    "uroman": "tchhu"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "موسم",
+    "uroman": "mwsm"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "ښۇب",
+    "uroman": "khub"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "شُر",
+    "uroman": "shur"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "سکولس",
+    "uroman": "skwls"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "منٛز",
+    "uroman": "mnvz"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "پرَن",
+    "uroman": "pran"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "مِٹھایی",
+    "uroman": "mitthaii"
+  },
+  {
+    "lang": "ks",
+    "lcode": "kas",
+    "word": "پسند",
+    "uroman": "psnd"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "بْایک",
+    "uroman": "bik"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "بَایک",
+    "uroman": "baaik"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "ءایک",
+    "uroman": "'aik"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "ٔایک",
+    "uroman": "'ik"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "١ایک",
+    "uroman": "1ik"
+  },
+  {
+    "lang": "ur",
+    "lcode": "urd",
+    "word": "ایکایک",
+    "uroman": "ikaik"
   }
 ]

@@ -121,6 +121,30 @@ def load_auto_table(path):
     return entries
 
 
+def load_auto_table_names(path):
+    """Parses the same file for its ::name field -> {char: unicode_name}.
+
+    uroman consults a character's *Unicode name* (not just its category or
+    romanization) in one place that matters for Brahmic scripts:
+    add_default_abugida_vowel's `if 'VOCALIC' in self.uroman.chr_name(
+    last_s_char): return base_rom` (uroman.py line 1732). Uroman's chr_name()
+    is unicodedata.name() with a fallback to its own bundled name table, so we
+    read the bundled ::name field first and fall back to the local Python
+    unicodedata -- matching uroman's resolution order in reverse but agreeing
+    on every character in these blocks (asserted below in main())."""
+    names = {}
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            if line.startswith("#") or not line.strip():
+                continue
+            line = re.sub(r"\s{2,}#.*$", "", line)
+            fields = parse_double_colon_line(line)
+            s, name = fields.get("s"), fields.get("name")
+            if s is not None and name is not None and len(s) == 1:
+                names[s] = name
+    return names
+
+
 def dequote(s):
     """Strips one layer of matching double quotes, as used by uroman's ::r /
     ::t values for literal-space and empty-string targets (e.g. '""' -> '',
@@ -178,6 +202,7 @@ def main():
     script_props = load_script_char_props(os.path.join(data_dir, "UnicodeDataProps.txt"))
 
     auto_entries = load_auto_table(os.path.join(data_dir, "romanization-auto-table.txt"))
+    auto_names = load_auto_table_names(os.path.join(data_dir, "romanization-auto-table.txt"))
     overwrite_entries = load_overwrite_table(os.path.join(data_dir, "UnicodeDataOverwrite.txt"))
     exception_entries = load_rom_table(os.path.join(data_dir, "romanization-table.txt"))
 
@@ -223,6 +248,19 @@ def main():
                 if s[0] in char_set:
                     multichar[s] = t
 
+        # Unicode General Category for every character in the script's block,
+        # not just the ones that have a romanization. uroman consults a
+        # neighbouring character's category (via char_is_nonspacing_mark) in
+        # several context rules that fire on characters it has NO romanization
+        # for -- most importantly the nukta, which has no entry in any uroman
+        # data file yet participates in add_default_abugida_vowel's
+        # "nonspacing mark followed by a vowel sign / virama" lookahead
+        # (uroman.py lines 1710-1717) and in is_at_end_of_word's nukta-skipping
+        # loop (line 1342). Without categories for those characters the engine
+        # cannot reproduce either rule.
+        for s in props["chars"]:
+            cats.setdefault(s, unicodedata.category(s))
+
         out = {
             "defaultVowel": "a",
             "virama": props["virama"],
@@ -235,6 +273,37 @@ def main():
             # happens to look consonant-only, e.g. anusvara -> "m").
             "categories": cats,
             "multiCharOverrides": multichar,
+            # Characters whose Unicode name contains "VOCALIC" (the vocalic
+            # R/RR/L/LL independent letters and their matching vowel signs).
+            # uroman.py line 1732 singles these out by name:
+            #     if 'VOCALIC' in self.uroman.chr_name(last_s_char):
+            #         return base_rom
+            # i.e. a word-*internal* vocalic unit never receives the default
+            # abugida vowel (word-final ones are decided earlier, by the
+            # end-of-word schwa rules on line 1723). This is a name-based test
+            # in uroman, so it has to be extracted as data rather than
+            # inferred from category/romanization in the engine.
+            "vocalicChars": sorted(
+                c for c in table
+                if "VOCALIC" in (auto_names.get(c) or unicodedata.name(c, ""))
+            ),
+            # Characters whose Unicode name contains "NUKTA". Like the VOCALIC
+            # set above this is a name-based test in uroman's own source, so it
+            # has to travel as data:
+            #     while ... and ('NUKTA' in self.uroman.chr_name(self.s[start])):
+            #         start += 1
+            # (uroman.py line 1342-1345, inside is_at_end_of_word) -- a nukta is
+            # transparent when deciding whether the consonant before it is
+            # word-final. Note none of these characters has a romanization of
+            # its own in any uroman data file; uroman romanizes a nukta to
+            # nothing unless it is part of a multi-character entry such as
+            # DEVANAGARI KA + NUKTA -> "q". Taken from the script's whole block
+            # rather than from `table`, precisely because they are absent from
+            # it.
+            "nuktaChars": sorted(
+                c for c in props["chars"]
+                if "NUKTA" in (auto_names.get(c) or unicodedata.name(c, ""))
+            ),
         }
         out_path = os.path.join(out_dir, f"{script_name.lower()}.json")
         with open(out_path, "w", encoding="utf-8") as f:

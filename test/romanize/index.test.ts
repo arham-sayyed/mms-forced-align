@@ -26,6 +26,15 @@ describe("romanizeWord", () => {
     expect(() => romanizeWord("আজ", "hi-IN")).toThrow(RomanizeError);
   });
 
+  // Task 14: a Bodo word carrying the apostrophe Bodo writes /ɯ/ with. This
+  // exercises three layers at once -- cleanNativeWord keeps the apostrophe,
+  // detectScript must not call the word "Mixed" because of it, and
+  // romanizeBrahmicWord must romanize it to "'". Verified against real
+  // uroman: बर' (brx) -> "bar'".
+  it("romanizes a Bodo word containing an apostrophe end to end", () => {
+    expect(romanizeWord("बर'", "brx-IN")).toBe("bar'");
+  });
+
   it("supports exactly the 20 documented languages", () => {
     expect(SUPPORTED_LANGUAGE_CODES.sort()).toEqual(
       [

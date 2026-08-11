@@ -1874,5 +1874,6718 @@
     "script": "Tamil",
     "word": "செய்கிறான்",
     "uroman": "ceykiraan"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "कृपया",
+    "uroman": "krpayaa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "अपना",
+    "uroman": "apanaa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "नाम",
+    "uroman": "naam"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "और",
+    "uroman": "aur"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "पता",
+    "uroman": "pataa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "यहाँ",
+    "uroman": "yahaam"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "लिखिए",
+    "uroman": "likhie"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "भारत",
+    "uroman": "bhaarat"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "की",
+    "uroman": "kii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "संस्कृति",
+    "uroman": "samskrti"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "बहुत",
+    "uroman": "bahut"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "प्राचीन",
+    "uroman": "praaciin"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "विविध",
+    "uroman": "vividh"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "है",
+    "uroman": "hai"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "वृक्षों",
+    "uroman": "vrkssom"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "छाया",
+    "uroman": "chaayaa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "बैठकर",
+    "uroman": "baitthakar"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "उसने",
+    "uroman": "usane"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "पुस्तक",
+    "uroman": "pustak"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "पढ़ी",
+    "uroman": "paddhii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "हृदय",
+    "uroman": "hrday"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "धड़कन",
+    "uroman": "dhaddakan"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "तेज़",
+    "uroman": "tez"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "हो",
+    "uroman": "ho"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "गई",
+    "uroman": "gaii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "थी",
+    "uroman": "thii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "पृथ्वी",
+    "uroman": "prthvii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "सूर्य",
+    "uroman": "suurya"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "के",
+    "uroman": "ke"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "चारों",
+    "uroman": "caarom"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "ओर",
+    "uroman": "or"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "घूमती",
+    "uroman": "ghuumatii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "विद्यार्थी",
+    "uroman": "vidyaarthii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "परीक्षा",
+    "uroman": "pariikssaa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "तैयारी",
+    "uroman": "taiyaarii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "व्यस्त",
+    "uroman": "vyasta"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "हैं",
+    "uroman": "haim"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "गाँव",
+    "uroman": "gaamv"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "लोग",
+    "uroman": "log"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "खेतों",
+    "uroman": "khetom"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "काम",
+    "uroman": "kaam"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "कर",
+    "uroman": "kar"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "रहे",
+    "uroman": "rahe"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "थे",
+    "uroman": "the"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "दृष्टि",
+    "uroman": "drsstti"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "कमज़ोर",
+    "uroman": "kamazor"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "होने",
+    "uroman": "hone"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "कारण",
+    "uroman": "kaarann"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "चश्मा",
+    "uroman": "cashmaa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "पहना",
+    "uroman": "pahanaa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "मिठाई",
+    "uroman": "mitthaaii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "खाना",
+    "uroman": "khaanaa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "सरकार",
+    "uroman": "sarakaar"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "ने",
+    "uroman": "ne"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "नई",
+    "uroman": "naii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "योजना",
+    "uroman": "yojanaa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "घोषणा",
+    "uroman": "ghossannaa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "बच्चे",
+    "uroman": "bacce"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "बगीचे",
+    "uroman": "bagiice"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "खेल",
+    "uroman": "khel"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "रेलगाड़ी",
+    "uroman": "relagaaddii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "स्टेशन",
+    "uroman": "stteshan"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "पर",
+    "uroman": "par"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "समय",
+    "uroman": "samay"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "से",
+    "uroman": "se"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "पहुँची",
+    "uroman": "pahumcii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "उन्होंने",
+    "uroman": "unhomne"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "अपनी",
+    "uroman": "apanii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "मातृभाषा",
+    "uroman": "maatrbhaassaa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "कविता",
+    "uroman": "kavitaa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "लिखी",
+    "uroman": "likhii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "ठंड",
+    "uroman": "tthamdd"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "मौसम",
+    "uroman": "mausam"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "सुबह",
+    "uroman": "subah"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "जल्दी",
+    "uroman": "jaldii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "उठना",
+    "uroman": "utthanaa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "मुश्किल",
+    "uroman": "mushkil"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "यह",
+    "uroman": "yah"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "ज़रूरी",
+    "uroman": "zaruurii"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "कि",
+    "uroman": "ki"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "हम",
+    "uroman": "ham"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "हमेशा",
+    "uroman": "hameshaa"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "सच",
+    "uroman": "sac"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "बोलें",
+    "uroman": "bolem"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "महाराष्ट्रातील",
+    "uroman": "mahaaraassttraatiil"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "लोक",
+    "uroman": "lok"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "मराठी",
+    "uroman": "maraatthii"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "भाषा",
+    "uroman": "bhaassaa"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "बोलतात",
+    "uroman": "bolataat"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "कृपया",
+    "uroman": "krpayaa"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "दार",
+    "uroman": "daar"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "बंद",
+    "uroman": "bamd"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "करा",
+    "uroman": "karaa"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "मुले",
+    "uroman": "mule"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "शाळेत",
+    "uroman": "shaallet"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "जाऊन",
+    "uroman": "jaauun"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "अभ्यास",
+    "uroman": "abhyaas"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "करतात",
+    "uroman": "karataat"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "पावसाळ्यात",
+    "uroman": "paavasaallyaat"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "नदीला",
+    "uroman": "nadiilaa"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "पूर",
+    "uroman": "puur"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "येतो",
+    "uroman": "yeto"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "तिने",
+    "uroman": "tine"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "स्वयंपाकघरात",
+    "uroman": "svayampaakagharaat"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "भाजी",
+    "uroman": "bhaajii"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "शिजवली",
+    "uroman": "shijavalii"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "सूर्य",
+    "uroman": "suurya"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "पूर्वेला",
+    "uroman": "puurvelaa"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "उगवतो",
+    "uroman": "ugavato"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "पश्चिमेला",
+    "uroman": "pashcimelaa"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "मावळतो",
+    "uroman": "maavallato"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "आमच्या",
+    "uroman": "aamacyaa"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "गावात",
+    "uroman": "gaavaat"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "दरवर्षी",
+    "uroman": "daravarssii"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "मोठी",
+    "uroman": "motthii"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "जत्रा",
+    "uroman": "jatraa"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "भरते",
+    "uroman": "bharate"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "त्याने",
+    "uroman": "tyaane"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "पुस्तक",
+    "uroman": "pustak"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "वाचून",
+    "uroman": "vaacuun"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "संपवले",
+    "uroman": "sampavale"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "संस्कृती",
+    "uroman": "samskrtii"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "परंपरा",
+    "uroman": "paramparaa"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "जपणे",
+    "uroman": "japanne"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "महत्त्वाचे",
+    "uroman": "mahattvaace"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "आहे",
+    "uroman": "aahe"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "वृक्षतोड",
+    "uroman": "vrkssatodd"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "थांबवली",
+    "uroman": "thaambavalii"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "पाहिजे",
+    "uroman": "paahije"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "शेतकरी",
+    "uroman": "shetakarii"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "शेतात",
+    "uroman": "shetaat"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "काम",
+    "uroman": "kaam"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "करत",
+    "uroman": "karat"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "आहेत",
+    "uroman": "aahet"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "गोड",
+    "uroman": "godd"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "पदार्थ",
+    "uroman": "padaartha"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "फार",
+    "uroman": "phaar"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "आवडतात",
+    "uroman": "aavaddataat"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "रेल्वे",
+    "uroman": "relve"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "स्थानकावर",
+    "uroman": "sthaanakaavar"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "गर्दी",
+    "uroman": "gardii"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "होती",
+    "uroman": "hotii"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "दृष्टी",
+    "uroman": "drssttii"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "अधू",
+    "uroman": "adhuu"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "असल्यामुळे",
+    "uroman": "asalyaamulle"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "चष्मा",
+    "uroman": "cassmaa"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "घातला",
+    "uroman": "ghaatalaa"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "हृदयाची",
+    "uroman": "hrdayaacii"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "धडधड",
+    "uroman": "dhaddadhadd"
+  },
+  {
+    "lang": "mr",
+    "lcode": "mar",
+    "script": "Devanagari",
+    "word": "वाढली",
+    "uroman": "vaaddhalii"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "नेपालको",
+    "uroman": "nepaalako"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "राजधानी",
+    "uroman": "raajadhaanii"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "काठमाडौं",
+    "uroman": "kaatthamaaddaum"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "हो",
+    "uroman": "ho"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "कृपया",
+    "uroman": "krpayaa"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "सहयोग",
+    "uroman": "sahayog"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "गर्नुहोस्",
+    "uroman": "garnuhos"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "हिमालका",
+    "uroman": "himaalakaa"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "हिउँ",
+    "uroman": "hium"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "चुचुराहरू",
+    "uroman": "cucuraaharuu"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "सुन्दर",
+    "uroman": "sundar"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "देखिन्छन्",
+    "uroman": "dekhinchan"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "विद्यार्थीहरू",
+    "uroman": "vidyaarthiiharuu"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "विद्यालयमा",
+    "uroman": "vidyaalayamaa"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "पढ्दै",
+    "uroman": "paddhdai"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "छन्",
+    "uroman": "chan"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "आमाले",
+    "uroman": "aamaale"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "भात",
+    "uroman": "bhaat"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "पकाउनुभयो",
+    "uroman": "pakaaunubhayo"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "गाउँका",
+    "uroman": "gaaumkaa"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "मानिसहरू",
+    "uroman": "maanisaharuu"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "खेतमा",
+    "uroman": "khetamaa"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "काम",
+    "uroman": "kaam"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "गर्छन्",
+    "uroman": "garchan"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "वर्षामा",
+    "uroman": "varssaamaa"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "नदीको",
+    "uroman": "nadiiko"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "पानी",
+    "uroman": "paanii"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "बढ्छ",
+    "uroman": "baddhcha"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "संस्कृति",
+    "uroman": "samskrti"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "परम्परा",
+    "uroman": "paramparaa"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "जोगाउनु",
+    "uroman": "jogaaunu"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "पर्छ",
+    "uroman": "parcha"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "उनले",
+    "uroman": "unale"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "मातृभाषामा",
+    "uroman": "maatrbhaassaamaa"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "कविता",
+    "uroman": "kavitaa"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "लेखे",
+    "uroman": "lekhe"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "सूर्य",
+    "uroman": "suurya"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "पूर्वबाट",
+    "uroman": "puurvabaatt"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "उदाउँछ",
+    "uroman": "udaaumch"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "बजारमा",
+    "uroman": "bajaaramaa"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "भीड",
+    "uroman": "bhiidd"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "थियो",
+    "uroman": "thiyo"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "मिठाई",
+    "uroman": "mitthaaii"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "खान",
+    "uroman": "khaan"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "दृष्टि",
+    "uroman": "drsstti"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "कमजोर",
+    "uroman": "kamajor"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "भएकाले",
+    "uroman": "bhaekaale"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "चश्मा",
+    "uroman": "cashmaa"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "लगाए",
+    "uroman": "lagaae"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "सरकारले",
+    "uroman": "sarakaarale"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "नयाँ",
+    "uroman": "nayaam"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "नीति",
+    "uroman": "niiti"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "घोषणा",
+    "uroman": "ghossannaa"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "गरे",
+    "uroman": "gare"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "जाडो",
+    "uroman": "jaaddo"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "मौसममा",
+    "uroman": "mausamamaa"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "बिहान",
+    "uroman": "bihaan"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "उठ्न",
+    "uroman": "utthna"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "गाह्रो",
+    "uroman": "gaahro"
+  },
+  {
+    "lang": "ne",
+    "lcode": "nep",
+    "script": "Devanagari",
+    "word": "हुन्छ",
+    "uroman": "huncha"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "सत्यमेव",
+    "uroman": "satyameva"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "जयते",
+    "uroman": "jayate"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "नानृतम्",
+    "uroman": "naanrtam"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "विद्या",
+    "uroman": "vidyaa"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "ददाति",
+    "uroman": "dadaati"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "विनयम्",
+    "uroman": "vinayam"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "वृक्षाः",
+    "uroman": "vrkssaah"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "जलं",
+    "uroman": "jalam"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "विना",
+    "uroman": "vinaa"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "न",
+    "uroman": "na"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "जीवन्ति",
+    "uroman": "jiivanti"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "गुरुः",
+    "uroman": "guruh"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "शिष्येभ्यः",
+    "uroman": "shissyebhyah"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "ज्ञानं",
+    "uroman": "jnyaanam"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "सूर्यः",
+    "uroman": "suuryah"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "पूर्वस्यां",
+    "uroman": "puurvasyaam"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "दिशि",
+    "uroman": "dishi"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "उदेति",
+    "uroman": "udeti"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "कृष्णः",
+    "uroman": "krssnnah"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "अर्जुनाय",
+    "uroman": "arjunaaya"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "गीतां",
+    "uroman": "giitaam"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "अवदत्",
+    "uroman": "avadat"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "पृथिव्यां",
+    "uroman": "prthivyaam"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "बहवः",
+    "uroman": "bahavah"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "जनाः",
+    "uroman": "janaah"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "वसन्ति",
+    "uroman": "vasanti"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "मातृभूमिः",
+    "uroman": "maatrbhuumih"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "स्वर्गादपि",
+    "uroman": "svargaadapi"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "गरीयसी",
+    "uroman": "gariiyasii"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "अहं",
+    "uroman": "aham"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "संस्कृतं",
+    "uroman": "samskrtam"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "पठामि",
+    "uroman": "patthaami"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "नद्याः",
+    "uroman": "nadyaah"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "शीतलम्",
+    "uroman": "shiitalam"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "अस्ति",
+    "uroman": "asti"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "बालकाः",
+    "uroman": "baalakaah"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "उद्याने",
+    "uroman": "udyaane"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "क्रीडन्ति",
+    "uroman": "kriiddanti"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "हृदये",
+    "uroman": "hrdaye"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "शान्तिः",
+    "uroman": "shaantih"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "भवतु",
+    "uroman": "bhavatu"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "ऋषयः",
+    "uroman": "rassayah"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "तपः",
+    "uroman": "tapah"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "कुर्वन्ति",
+    "uroman": "kurvanti"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "धर्मो",
+    "uroman": "dharmo"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "रक्षति",
+    "uroman": "rakssati"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "रक्षितः",
+    "uroman": "rakssitah"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "जीवने",
+    "uroman": "jiivane"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "सत्यस्य",
+    "uroman": "satyasya"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "महत्त्वम्",
+    "uroman": "mahattvam"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "अ॒ग्निमी॑ळे",
+    "uroman": "agnimiille"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "पु॒रोहि॑तं",
+    "uroman": "purohitam"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "य॒ज्ञस्य॑",
+    "uroman": "yajnyasya"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "दे॒वमृ॒त्विज॑म्",
+    "uroman": "devamratvijam"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "होता॑रं",
+    "uroman": "hotaaram"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "रत्न॒धात॑मम्",
+    "uroman": "ratnadhaatamam"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "मिथिलाक",
+    "uroman": "mithilaak"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "संस्कृति",
+    "uroman": "samskrti"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "पुरान",
+    "uroman": "puraan"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "अछि",
+    "uroman": "achi"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "गाम",
+    "uroman": "gaam"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "जा",
+    "uroman": "jaa"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "रहल",
+    "uroman": "rahal"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "छी",
+    "uroman": "chii"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "कृपया",
+    "uroman": "krpayaa"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "अहाँ",
+    "uroman": "ahaam"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "एतय",
+    "uroman": "etay"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "बैसू",
+    "uroman": "baisuu"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "बच्चा",
+    "uroman": "baccaa"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "सभ",
+    "uroman": "sabh"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "विद्यालय",
+    "uroman": "vidyaalay"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "जाइत",
+    "uroman": "jaait"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "माय",
+    "uroman": "maay"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "भोजन",
+    "uroman": "bhojan"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "बनौलनि",
+    "uroman": "banaulani"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "नदीक",
+    "uroman": "nadiik"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "पानि",
+    "uroman": "paani"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "साफ",
+    "uroman": "saaph"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "गाछ",
+    "uroman": "gaach"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "हरियर",
+    "uroman": "hariyar"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "हुनका",
+    "uroman": "hunakaa"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "मिठाइ",
+    "uroman": "mitthaai"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "लगैत",
+    "uroman": "lagait"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "छनि",
+    "uroman": "chani"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "खेत",
+    "uroman": "khet"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "मे",
+    "uroman": "me"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "किसान",
+    "uroman": "kisaan"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "काज",
+    "uroman": "kaaj"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "करैत",
+    "uroman": "karait"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "छथि",
+    "uroman": "chathi"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "भोरे",
+    "uroman": "bhore"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "जाड़",
+    "uroman": "jaadd"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "छल",
+    "uroman": "chal"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "ओ",
+    "uroman": "o"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "अपन",
+    "uroman": "apan"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "मातृभाषा",
+    "uroman": "maatrbhaassaa"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "कविता",
+    "uroman": "kavitaa"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "लिखलनि",
+    "uroman": "likhalani"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "सूर्य",
+    "uroman": "suurya"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "पूब",
+    "uroman": "puub"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "दिस",
+    "uroman": "dis"
+  },
+  {
+    "lang": "mai",
+    "lcode": "mai",
+    "script": "Devanagari",
+    "word": "उगैत",
+    "uroman": "ugait"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "डोगरी",
+    "uroman": "ddogarii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "भाशा",
+    "uroman": "bhaashaa"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "जम्मू",
+    "uroman": "jammuu"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "च",
+    "uroman": "ca"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "बोली",
+    "uroman": "bolii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "जंदी",
+    "uroman": "jamdii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "ऐ",
+    "uroman": "ai"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "मौसम",
+    "uroman": "mausam"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "मिगी",
+    "uroman": "migii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "मिठाई",
+    "uroman": "mitthaaii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "खाना",
+    "uroman": "khaanaa"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "पसंद",
+    "uroman": "pasamd"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "बच्चे",
+    "uroman": "bacce"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "स्कूल",
+    "uroman": "skuul"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "गे",
+    "uroman": "ge"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "न",
+    "uroman": "na"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "माता",
+    "uroman": "maataa"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "जी",
+    "uroman": "jii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "रोटी",
+    "uroman": "rottii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "बनांदी",
+    "uroman": "banaamdii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "गांह",
+    "uroman": "gaamh"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "दे",
+    "uroman": "de"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "लोक",
+    "uroman": "lok"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "खेतें",
+    "uroman": "khetem"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "कम्म",
+    "uroman": "kamma"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "करदे",
+    "uroman": "karade"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "नदी",
+    "uroman": "nadii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "दा",
+    "uroman": "daa"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "पानी",
+    "uroman": "paanii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "ठंडा",
+    "uroman": "tthamddaa"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "साढ़ी",
+    "uroman": "saaddhii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "संस्कृति",
+    "uroman": "samskrti"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "बड़ी",
+    "uroman": "baddii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "पुराणी",
+    "uroman": "puraannii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "ओह",
+    "uroman": "oh"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "किताब",
+    "uroman": "kitaab"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "पढ़दा",
+    "uroman": "paddhadaa"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "सूरज",
+    "uroman": "suuraj"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "पूरब",
+    "uroman": "puurab"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "चा",
+    "uroman": "caa"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "निकलदा",
+    "uroman": "nikaladaa"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "रेल",
+    "uroman": "rel"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "गड्डी",
+    "uroman": "gaddddii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "स्टेशन",
+    "uroman": "stteshan"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "पर",
+    "uroman": "par"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "पुज्जी",
+    "uroman": "pujjii"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "कृपया",
+    "uroman": "krpayaa"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "दरवाजा",
+    "uroman": "daravaajaa"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "बंद",
+    "uroman": "bamd"
+  },
+  {
+    "lang": "doi",
+    "lcode": "doi",
+    "script": "Devanagari",
+    "word": "करो",
+    "uroman": "karo"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "गोंयची",
+    "uroman": "gomyacii"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "संस्कृती",
+    "uroman": "samskrtii"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "सुंदर",
+    "uroman": "sumdar"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "आसा",
+    "uroman": "aasaa"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "बाजारांत",
+    "uroman": "baajaaraamt"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "गेलों",
+    "uroman": "gelom"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "भुरगीं",
+    "uroman": "bhuragiim"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "शाळेंत",
+    "uroman": "shaallemt"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "वतात",
+    "uroman": "vataat"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "आवय",
+    "uroman": "aavay"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "जेवण",
+    "uroman": "jevann"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "करता",
+    "uroman": "karataa"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "दर्याच्या",
+    "uroman": "daryaacyaa"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "देगेर",
+    "uroman": "deger"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "लोक",
+    "uroman": "lok"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "भोंवतात",
+    "uroman": "bhomvataat"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "कृपया",
+    "uroman": "krpayaa"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "दार",
+    "uroman": "daar"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "बंद",
+    "uroman": "bamd"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "कर",
+    "uroman": "kar"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "शेतकार",
+    "uroman": "shetakaar"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "शेतांत",
+    "uroman": "shetaamt"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "काम",
+    "uroman": "kaam"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "करतात",
+    "uroman": "karataat"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "सूर्य",
+    "uroman": "suurya"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "उदेंतेक",
+    "uroman": "udemtek"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "उदेता",
+    "uroman": "udetaa"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "म्हाका",
+    "uroman": "mhaakaa"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "गोड",
+    "uroman": "godd"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "खावंक",
+    "uroman": "khaavamk"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "आवडता",
+    "uroman": "aavaddataa"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "पावस",
+    "uroman": "paavas"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "पडटा",
+    "uroman": "paddattaa"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "तेन्ना",
+    "uroman": "tennaa"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "नंय",
+    "uroman": "namy"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "भरता",
+    "uroman": "bharataa"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "ताणें",
+    "uroman": "taannem"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "पुस्तक",
+    "uroman": "pustak"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "वाचलें",
+    "uroman": "vaacalem"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "वृक्ष",
+    "uroman": "vrkssa"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "तोडप",
+    "uroman": "toddap"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "बरें",
+    "uroman": "barem"
+  },
+  {
+    "lang": "kok",
+    "lcode": "kok",
+    "script": "Devanagari",
+    "word": "न्हय",
+    "uroman": "nhay"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "बर'",
+    "uroman": "bar'"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "राव",
+    "uroman": "raav"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "आसामनि",
+    "uroman": "aasaamani"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "मुलुगनि",
+    "uroman": "mulugani"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "बाजारआव",
+    "uroman": "baajaaraaav"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "थांगोन",
+    "uroman": "thaamgon"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "फिसाफोर",
+    "uroman": "phisaaphor"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "फरायसालियाव",
+    "uroman": "pharaayasaaliyaav"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "फरायो",
+    "uroman": "pharaayo"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "बिमा",
+    "uroman": "bimaa"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "साननायाव",
+    "uroman": "saananaayaav"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "आगान",
+    "uroman": "aagaan"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "दानो",
+    "uroman": "daano"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "आबादगिरिफोर",
+    "uroman": "aabaadagiriphor"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "हालामाव",
+    "uroman": "haalaamaav"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "खामानि",
+    "uroman": "khaamaani"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "मावो",
+    "uroman": "maavo"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "आंहा",
+    "uroman": "aamhaa"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "मिठाइ",
+    "uroman": "mitthaai"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "जानो",
+    "uroman": "jaano"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "मोजां",
+    "uroman": "mojaam"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "सान",
+    "uroman": "saan"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "सानजायाव",
+    "uroman": "saanajaayaav"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "ओंखारो",
+    "uroman": "omkhaaro"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "दै",
+    "uroman": "dai"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "गोजौ",
+    "uroman": "gojau"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "जायो",
+    "uroman": "jaayo"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "जौगानाय",
+    "uroman": "jaugaanaay"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "थाखाय",
+    "uroman": "thaakhaay"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "सोलों",
+    "uroman": "solom"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "गोनां",
+    "uroman": "gonaam"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "बिनि",
+    "uroman": "bini"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "बिजाब",
+    "uroman": "bijaab"
+  },
+  {
+    "lang": "brx",
+    "lcode": "brx",
+    "script": "Devanagari",
+    "word": "फरायदों",
+    "uroman": "pharaayadom"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "সকালে",
+    "uroman": "sakaale"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "আকাশ",
+    "uroman": "aakaash"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "পরিষ্কার",
+    "uroman": "parisskaar"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "ছিল",
+    "uroman": "chhil"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "ছাত্ররা",
+    "uroman": "chhaatraraa"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "ক্লাসে",
+    "uroman": "klaase"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "মনোযোগ",
+    "uroman": "manoyog"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "দিয়ে",
+    "uroman": "diye"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "পড়ছে",
+    "uroman": "parachhe"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "তিনি",
+    "uroman": "tini"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "একজন",
+    "uroman": "ekajan"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "বিখ্যাত",
+    "uroman": "bikhyaat"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "চিত্রশিল্পী",
+    "uroman": "chitrashilpii"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "কৃষকরা",
+    "uroman": "krssakaraa"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "মাঠে",
+    "uroman": "maatthe"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "ধান",
+    "uroman": "dhaan"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "কাটছে",
+    "uroman": "kaattachhe"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "প্রিয়",
+    "uroman": "priy"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "বিষয়",
+    "uroman": "bissay"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "হলো",
+    "uroman": "halo"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "ইতিহাস",
+    "uroman": "itihaas"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "সময়",
+    "uroman": "samay"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "দ্রুত",
+    "uroman": "drut"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "চলে",
+    "uroman": "chale"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "যায়",
+    "uroman": "yaay"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "এই",
+    "uroman": "ei"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "বইটি",
+    "uroman": "baitti"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "সুন্দর",
+    "uroman": "sundar"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "শিক্ষণীয়",
+    "uroman": "shikssanniiy"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "দৃষ্টিশক্তি",
+    "uroman": "drssttishakti"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "দুর্বল",
+    "uroman": "durbal"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "হওয়ায়",
+    "uroman": "haoyaay"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "সে",
+    "uroman": "se"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "চশমা",
+    "uroman": "chashamaa"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "পরে",
+    "uroman": "pare"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "বাংলাদেশের",
+    "uroman": "baanglaadesher"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "রাজধানী",
+    "uroman": "raajadhaanii"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "ঢাকা",
+    "uroman": "ddhaakaa"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "সংস্কৃতি",
+    "uroman": "sangskrti"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "ও",
+    "uroman": "o"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "ঐতিহ্য",
+    "uroman": "aitihya"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "রক্ষা",
+    "uroman": "rakssaa"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "করা",
+    "uroman": "karaa"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "দরকার",
+    "uroman": "darakaar"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "ছেলেটি",
+    "uroman": "chheletti"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "ফুটবল",
+    "uroman": "phuttabal"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "খেলছে",
+    "uroman": "khelachhe"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "যন্ত্রটি",
+    "uroman": "yantratti"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "নষ্ট",
+    "uroman": "nasstta"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "হয়ে",
+    "uroman": "haye"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "গেছে",
+    "uroman": "gechhe"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "রাষ্ট্রের",
+    "uroman": "raassttrer"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "উন্নয়ন",
+    "uroman": "unnayan"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "সবার",
+    "uroman": "sabaar"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "দায়িত্ব",
+    "uroman": "daayitba"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "মা",
+    "uroman": "maa"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "রান্নাঘরে",
+    "uroman": "raannaaghare"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "খাবার",
+    "uroman": "khaabaar"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "তৈরি",
+    "uroman": "tairi"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "করছেন",
+    "uroman": "karachhen"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "বৃষ্টি",
+    "uroman": "brsstti"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "হলে",
+    "uroman": "hale"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "গাছপালা",
+    "uroman": "gaachhapaalaa"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "সবুজ",
+    "uroman": "sabuj"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "ওঠে",
+    "uroman": "otthe"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "যত্ন",
+    "uroman": "yatna"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "করে",
+    "uroman": "kare"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "কাজটি",
+    "uroman": "kaajatti"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "করেছে",
+    "uroman": "karechhe"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "তার",
+    "uroman": "taar"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "চিহ্ন",
+    "uroman": "chihna"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "এখনো",
+    "uroman": "ekhano"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "রয়ে",
+    "uroman": "raye"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "ছাত্র",
+    "uroman": "chhaatra"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "সবসময়",
+    "uroman": "sabasamay"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "প্রশ্ন",
+    "uroman": "prashna"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "অসমীয়া",
+    "uroman": "asamiiyaa"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "ভাষা",
+    "uroman": "bhaassaa"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "অসমৰ",
+    "uroman": "asamar"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "ৰাজ্যিক",
+    "uroman": "raajyik"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "ৰাতিপুৱা",
+    "uroman": "raatipuraa"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "বৰষুণ",
+    "uroman": "barassunn"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "দিছিল",
+    "uroman": "dichhil"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "ছাত্ৰসকলে",
+    "uroman": "chhaatrasakale"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "মন",
+    "uroman": "man"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "দি",
+    "uroman": "di"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "পঢ়িছে",
+    "uroman": "parhichhe"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "ভাত",
+    "uroman": "bhaat"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "খাইছোঁ",
+    "uroman": "khaaichhon"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "কৃষকসকলে",
+    "uroman": "krssakasakale"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "পথাৰত",
+    "uroman": "pathaarat"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "কাম",
+    "uroman": "kaam"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "কৰিছে",
+    "uroman": "karichhe"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "তেওঁ",
+    "uroman": "teon"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "এজন",
+    "uroman": "ejan"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "বিখ্যাত",
+    "uroman": "bikhyaat"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "লেখক",
+    "uroman": "lekhak"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "সময়",
+    "uroman": "samay"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "সোনকালে",
+    "uroman": "sonakaale"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "পাৰ",
+    "uroman": "paar"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "হৈ",
+    "uroman": "hai"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "যায়",
+    "uroman": "yaay"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "এই",
+    "uroman": "ei"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "কিতাপখন",
+    "uroman": "kitaapakhan"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "বৰ",
+    "uroman": "bar"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "ধুনীয়া",
+    "uroman": "dhuniiyaa"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "সংস্কৃতি",
+    "uroman": "sangskrti"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "চহকী",
+    "uroman": "chahakii"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "যন্ত্ৰটো",
+    "uroman": "yantratto"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "নষ্ট",
+    "uroman": "nasstta"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "গৈছে",
+    "uroman": "gaichhe"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "মাকে",
+    "uroman": "maake"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "ৰন্ধাঘৰত",
+    "uroman": "randhaagharat"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "ৰান্ধি",
+    "uroman": "raandhi"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "আছে",
+    "uroman": "aachhe"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "দিলে",
+    "uroman": "dile"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "গছবোৰ",
+    "uroman": "gachhabor"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "সেউজীয়া",
+    "uroman": "seujiiyaa"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "হয়",
+    "uroman": "hay"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "যত্ন",
+    "uroman": "yatna"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "লৈ",
+    "uroman": "lai"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "কামটো",
+    "uroman": "kaamatto"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਪੰਜਾਬੀ",
+    "uroman": "pamjaabii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਸਾਡੀ",
+    "uroman": "saaddii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਮਾਂ",
+    "uroman": "maam"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਬੋਲੀ",
+    "uroman": "boolii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਹੈ",
+    "uroman": "hai"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਮੌਸਮ",
+    "uroman": "mausam"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਸੁਹਾਵਣਾ",
+    "uroman": "suhaavannaa"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਕਿਸਾਨ",
+    "uroman": "kisaan"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਖੇਤਾਂ",
+    "uroman": "kheetaam"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਵਿੱਚ",
+    "uroman": "vicca"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਕੰਮ",
+    "uroman": "kamm"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਕਰ",
+    "uroman": "kar"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਰਹੇ",
+    "uroman": "rahee"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਹਨ",
+    "uroman": "han"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਬੱਚੇ",
+    "uroman": "baccee"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਸਕੂਲ",
+    "uroman": "sakuul"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਪੜ੍ਹ",
+    "uroman": "parrha"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਮਿੱਠਾ",
+    "uroman": "mittthaa"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਖਾਣਾ",
+    "uroman": "khaannaa"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਗੁਰਦੁਆਰੇ",
+    "uroman": "guraduaaree"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਸੰਗਤ",
+    "uroman": "samgat"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਇਕੱਠੀ",
+    "uroman": "ikttthii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਹੋਈ",
+    "uroman": "hooii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਦਰਿਆ",
+    "uroman": "dariaa"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਦਾ",
+    "uroman": "daa"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਪਾਣੀ",
+    "uroman": "paannii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਠੰਢਾ",
+    "uroman": "tthamddhaa"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਸੀ",
+    "uroman": "sii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਉਸ",
+    "uroman": "us"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਨੇ",
+    "uroman": "nee"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਕਿਤਾਬ",
+    "uroman": "kitaab"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਕੇ",
+    "uroman": "kee"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਖ਼ਤਮ",
+    "uroman": "khatam"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਕੀਤੀ",
+    "uroman": "kiitii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਸਾਡਾ",
+    "uroman": "saaddaa"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਸੱਭਿਆਚਾਰ",
+    "uroman": "sabbhiaacaar"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਅਮੀਰ",
+    "uroman": "amiir"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਸੂਰਜ",
+    "uroman": "suuraj"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਪੂਰਬ",
+    "uroman": "puurab"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਵੱਲੋਂ",
+    "uroman": "valloom"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਚੜ੍ਹਦਾ",
+    "uroman": "carrhadaa"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਰੇਲ",
+    "uroman": "reel"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਗੱਡੀ",
+    "uroman": "gadddii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਸਟੇਸ਼ਨ",
+    "uroman": "satteesana"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਉੱਤੇ",
+    "uroman": "uttee"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਪਹੁੰਚੀ",
+    "uroman": "pahumcii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਮਾਤਾ",
+    "uroman": "maataa"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਜੀ",
+    "uroman": "jii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਰਸੋਈ",
+    "uroman": "rasooii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਰੋਟੀ",
+    "uroman": "roottii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਬਣਾ",
+    "uroman": "bannaa"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਪਿੰਡ",
+    "uroman": "pimdd"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਦੇ",
+    "uroman": "dee"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਲੋਕ",
+    "uroman": "look"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਮੇਲੇ",
+    "uroman": "meelee"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਗਏ",
+    "uroman": "gaee"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਸਰਕਾਰ",
+    "uroman": "sarakaar"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਨਵੀਂ",
+    "uroman": "naviim"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਯੋਜਨਾ",
+    "uroman": "yoojanaa"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਐਲਾਨ",
+    "uroman": "ailaan"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਕੀਤਾ",
+    "uroman": "kiitaa"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਵਿਦਿਆਰਥੀ",
+    "uroman": "vidiaarathii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਇਮਤਿਹਾਨ",
+    "uroman": "imatihaan"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਦੀ",
+    "uroman": "dii"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਤਿਆਰੀ",
+    "uroman": "tiaarii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ગુજરાતી",
+    "uroman": "gujaraatii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ભાષા",
+    "uroman": "bhaassaa"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "મીઠી",
+    "uroman": "miitthii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "છે",
+    "uroman": "che"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "કૃપા",
+    "uroman": "krpaa"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "કરીને",
+    "uroman": "kariine"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "દરવાજો",
+    "uroman": "daravaajo"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "બંધ",
+    "uroman": "bamdh"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "કરો",
+    "uroman": "karo"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "બાળકો",
+    "uroman": "baallako"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "બગીચામાં",
+    "uroman": "bagiicaamaam"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "રમી",
+    "uroman": "ramii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "રહ્યાં",
+    "uroman": "rahyaam"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ખેડૂતો",
+    "uroman": "khedduuto"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ખેતરમાં",
+    "uroman": "khetaramaam"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "કામ",
+    "uroman": "kaam"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "કરે",
+    "uroman": "kare"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "મીઠાઈ",
+    "uroman": "miitthaaii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ખાવાનું",
+    "uroman": "khaavaanum"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "બહુ",
+    "uroman": "bahu"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ગમે",
+    "uroman": "game"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "સૂર્ય",
+    "uroman": "suurya"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "પૂર્વ",
+    "uroman": "puurva"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "દિશામાં",
+    "uroman": "dishaamaam"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ઊગે",
+    "uroman": "uuge"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "વૃક્ષોની",
+    "uroman": "vrkssonii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "છાયામાં",
+    "uroman": "chaayaamaam"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "બેસીને",
+    "uroman": "besiine"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "તેણે",
+    "uroman": "tenne"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "પુસ્તક",
+    "uroman": "pustak"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "વાંચ્યું",
+    "uroman": "vaamcyum"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "અમારા",
+    "uroman": "amaaraa"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ગામમાં",
+    "uroman": "gaamamaam"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "દર",
+    "uroman": "dar"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "વર્ષે",
+    "uroman": "varsse"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "મોટો",
+    "uroman": "motto"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "મેળો",
+    "uroman": "mello"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ભરાય",
+    "uroman": "bharaay"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "દૃષ્ટિ",
+    "uroman": "drsstti"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "નબળી",
+    "uroman": "naballii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "હોવાથી",
+    "uroman": "hovaathii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ચશ્માં",
+    "uroman": "cashmaam"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "પહેર્યાં",
+    "uroman": "paheryaam"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "સંસ્કૃતિ",
+    "uroman": "samskrti"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "પરંપરા",
+    "uroman": "paramparaa"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "જાળવવી",
+    "uroman": "jaallavavii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "જરૂરી",
+    "uroman": "jaruurii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ટ્રેન",
+    "uroman": "ttren"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "સ્ટેશન",
+    "uroman": "stteshan"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "પર",
+    "uroman": "par"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "સમયસર",
+    "uroman": "samayasar"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "પહોંચી",
+    "uroman": "pahomcii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "હૃદયના",
+    "uroman": "hrdayanaa"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ધબકારા",
+    "uroman": "dhabakaaraa"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "વધી",
+    "uroman": "vadhii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ગયા",
+    "uroman": "gayaa"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "હતા",
+    "uroman": "hataa"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "વરસાદ",
+    "uroman": "varasaad"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "પડે",
+    "uroman": "padde"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ત્યારે",
+    "uroman": "tyaare"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "નદી",
+    "uroman": "nadii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ભરાઈ",
+    "uroman": "bharaaii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "જાય",
+    "uroman": "jaay"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "વિદ્યાર્થીઓ",
+    "uroman": "vidyaarthiio"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "પરીક્ષાની",
+    "uroman": "pariikssaanii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "તૈયારી",
+    "uroman": "taiyaarii"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "માતાએ",
+    "uroman": "maataae"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "રસોડામાં",
+    "uroman": "rasoddaamaam"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "ભોજન",
+    "uroman": "bhojan"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "બનાવ્યું",
+    "uroman": "banaavyum"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଓଡ଼ିଆ",
+    "uroman": "oddiaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଭାଷା",
+    "uroman": "bhaassaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ମଧୁର",
+    "uroman": "madhura"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "କୃଷକମାନେ",
+    "uroman": "krssakamaane"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଜମିରେ",
+    "uroman": "jamire"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "କାମ",
+    "uroman": "kaama"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "କରୁଛନ୍ତି",
+    "uroman": "karuchanti"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ପିଲାମାନେ",
+    "uroman": "pilaamaane"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ବିଦ୍ୟାଳୟରେ",
+    "uroman": "bidyaallayare"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ପଢ଼ୁଛନ୍ତି",
+    "uroman": "paddhuchanti"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ସକାଳେ",
+    "uroman": "sakaalle"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଆକାଶ",
+    "uroman": "aakaasha"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ପରିଷ୍କାର",
+    "uroman": "parisskaara"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଥିଲା",
+    "uroman": "thilaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ମିଠା",
+    "uroman": "mitthaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଖାଇବାକୁ",
+    "uroman": "khaaibaaku"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଲାଗେ",
+    "uroman": "laage"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ସୂର୍ଯ୍ୟ",
+    "uroman": "suuryya"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ପୂର୍ବ",
+    "uroman": "puurba"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଦିଗରେ",
+    "uroman": "digare"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଉଦୟ",
+    "uroman": "udaya"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ହୁଏ",
+    "uroman": "hue"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଆମ",
+    "uroman": "aama"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଗାଁରେ",
+    "uroman": "gaamre"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ପ୍ରତିବର୍ଷ",
+    "uroman": "pratibarssa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ବଡ଼",
+    "uroman": "badda"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ମେଳା",
+    "uroman": "mellaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଦୃଷ୍ଟି",
+    "uroman": "drsstti"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଦୁର୍ବଳ",
+    "uroman": "durballa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ହେବାରୁ",
+    "uroman": "hebaaru"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ସେ",
+    "uroman": "se"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଚଷମା",
+    "uroman": "cassamaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ପିନ୍ଧିଲେ",
+    "uroman": "pindhile"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ସଂସ୍କୃତି",
+    "uroman": "samskrti"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଓ",
+    "uroman": "o"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ପରମ୍ପରା",
+    "uroman": "paramparaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ରକ୍ଷା",
+    "uroman": "rakssaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "କରିବା",
+    "uroman": "karibaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଦରକାର",
+    "uroman": "darakaara"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ରେଳଗାଡ଼ି",
+    "uroman": "rellagaaddi"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଷ୍ଟେସନରେ",
+    "uroman": "ssttesanare"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ପହଞ୍ଚିଲା",
+    "uroman": "pahanycilaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ମା",
+    "uroman": "maa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ରୋଷେଇ",
+    "uroman": "rossei"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଘରେ",
+    "uroman": "ghare"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଖାଦ୍ୟ",
+    "uroman": "khaadya"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ପ୍ରସ୍ତୁତ",
+    "uroman": "prastuta"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ବର୍ଷା",
+    "uroman": "barssaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ହେଲେ",
+    "uroman": "hele"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ନଦୀରେ",
+    "uroman": "nadiire"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ପାଣି",
+    "uroman": "paanni"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ବଢ଼େ",
+    "uroman": "baddhe"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଛାତ୍ରମାନେ",
+    "uroman": "chaatramaane"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ପରୀକ୍ଷା",
+    "uroman": "pariikssaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ପାଇଁ",
+    "uroman": "paaim"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ହେଉଛନ୍ତି",
+    "uroman": "heuchanti"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ହୃଦୟର",
+    "uroman": "hrdayara"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ସ୍ପନ୍ଦନ",
+    "uroman": "spandana"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ବଢ଼ିଗଲା",
+    "uroman": "baddhigalaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ସରକାର",
+    "uroman": "sarakaara"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ନୂଆ",
+    "uroman": "nuuaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଯୋଜନା",
+    "uroman": "yojanaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "ଘୋଷଣା",
+    "uroman": "ghossannaa"
+  },
+  {
+    "lang": "od",
+    "lcode": "ori",
+    "script": "Oriya",
+    "word": "କଲେ",
+    "uroman": "kale"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "తెలుగు",
+    "uroman": "telugu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "భాష",
+    "uroman": "bhaassa"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "మధురంగా",
+    "uroman": "madhuramgaa"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "ఉంటుంది",
+    "uroman": "umttumdi"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "కృష్ణా",
+    "uroman": "krssnnaa"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "నది",
+    "uroman": "nadi"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "ఆంధ్రప్రదేశ్",
+    "uroman": "aamdhrapradeesh"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "గుండా",
+    "uroman": "gumddaa"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "ప్రవహిస్తుంది",
+    "uroman": "pravahistumdi"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "రైతులు",
+    "uroman": "raitulu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "పొలంలో",
+    "uroman": "polamloo"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "పని",
+    "uroman": "pani"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "చేస్తున్నారు",
+    "uroman": "ceestunnaaru"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "పిల్లలు",
+    "uroman": "pillalu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "పాఠశాలలో",
+    "uroman": "paatthashaalaloo"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "చదువుతున్నారు",
+    "uroman": "caduvutunnaaru"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "తీపి",
+    "uroman": "tiipi"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "పదార్థాలు",
+    "uroman": "padaarthaalu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "ఇష్టం",
+    "uroman": "issttam"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "సూర్యుడు",
+    "uroman": "suuryuddu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "తూర్పున",
+    "uroman": "tuurpuna"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "ఉదయిస్తాడు",
+    "uroman": "udayistaaddu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "వృక్షాల",
+    "uroman": "vrkssaala"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "నీడలో",
+    "uroman": "niiddaloo"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "కూర్చుని",
+    "uroman": "kuurcuni"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "అతను",
+    "uroman": "atanu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "పుస్తకం",
+    "uroman": "pustakam"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "చదివాడు",
+    "uroman": "cadivaaddu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "మా",
+    "uroman": "maa"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "ఊరిలో",
+    "uroman": "uuriloo"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "ప్రతి",
+    "uroman": "prati"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "సంవత్సరం",
+    "uroman": "samvatsaram"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "పెద్ద",
+    "uroman": "pedda"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "జాతర",
+    "uroman": "jaatara"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "జరుగుతుంది",
+    "uroman": "jarugutumdi"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "దృష్టి",
+    "uroman": "drsstti"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "మందగించడంతో",
+    "uroman": "mamdagimcaddamtoo"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "ఆయన",
+    "uroman": "aayana"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "కళ్ళజోడు",
+    "uroman": "kallllajooddu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "పెట్టుకున్నాడు",
+    "uroman": "pettttukunnaaddu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "సంస్కృతి",
+    "uroman": "samskrti"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "సంప్రదాయాలను",
+    "uroman": "sampradaayaalanu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "కాపాడుకోవాలి",
+    "uroman": "kaapaaddukoovaali"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "రైలు",
+    "uroman": "railu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "సమయానికి",
+    "uroman": "samayaaniki"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "స్టేషన్",
+    "uroman": "stteessan"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "చేరుకుంది",
+    "uroman": "ceerukumdi"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "అమ్మ",
+    "uroman": "amma"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "వంటగదిలో",
+    "uroman": "vamttagadiloo"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "వంట",
+    "uroman": "vamtta"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "చేస్తోంది",
+    "uroman": "ceestoomdi"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "వర్షం",
+    "uroman": "varssam"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "పడితే",
+    "uroman": "padditee"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "చెరువులు",
+    "uroman": "ceruvulu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "నిండుతాయి",
+    "uroman": "nimddutaayi"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "హృదయ",
+    "uroman": "hrdaya"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "స్పందన",
+    "uroman": "spamdana"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "వేగంగా",
+    "uroman": "veegamgaa"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "మారింది",
+    "uroman": "maarimdi"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "విద్యార్థులు",
+    "uroman": "vidyaarthulu"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "పరీక్షలకు",
+    "uroman": "pariikssalaku"
+  },
+  {
+    "lang": "te",
+    "lcode": "tel",
+    "script": "Telugu",
+    "word": "సిద్ధమవుతున్నారు",
+    "uroman": "siddhamavutunnaaru"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಕನ್ನಡ",
+    "uroman": "kannadda"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಭಾಷೆ",
+    "uroman": "bhaasse"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಬಹಳ",
+    "uroman": "bahalla"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಸುಂದರವಾಗಿದೆ",
+    "uroman": "sumdaravaagide"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಕೃಷಿ",
+    "uroman": "krssi"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ನಮ್ಮ",
+    "uroman": "namma"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ದೇಶದ",
+    "uroman": "deeshada"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಬೆನ್ನೆಲುಬು",
+    "uroman": "bennelubu"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಮಕ್ಕಳು",
+    "uroman": "makkallu"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಶಾಲೆಯಲ್ಲಿ",
+    "uroman": "shaaleyalli"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಓದುತ್ತಿದ್ದಾರೆ",
+    "uroman": "ooduttiddaare"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ರೈತರು",
+    "uroman": "raitaru"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಹೊಲದಲ್ಲಿ",
+    "uroman": "holadalli"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಕೆಲಸ",
+    "uroman": "kelasa"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಮಾಡುತ್ತಿದ್ದಾರೆ",
+    "uroman": "maadduttiddaare"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಸಿಹಿ",
+    "uroman": "sihi"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ತಿನಿಸು",
+    "uroman": "tinisu"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಇಷ್ಟ",
+    "uroman": "isstta"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಸೂರ್ಯ",
+    "uroman": "suurya"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಪೂರ್ವದಲ್ಲಿ",
+    "uroman": "puurvadalli"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಉದಯಿಸುತ್ತಾನೆ",
+    "uroman": "udayisuttaane"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ವೃಕ್ಷಗಳ",
+    "uroman": "vrkssagalla"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ನೆರಳಿನಲ್ಲಿ",
+    "uroman": "nerallinalli"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಕುಳಿತು",
+    "uroman": "kullitu"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಅವನು",
+    "uroman": "avanu"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಪುಸ್ತಕ",
+    "uroman": "pustaka"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಓದಿದನು",
+    "uroman": "oodidanu"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಊರಿನಲ್ಲಿ",
+    "uroman": "uurinalli"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಪ್ರತಿ",
+    "uroman": "prati"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ವರ್ಷ",
+    "uroman": "varssa"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ದೊಡ್ಡ",
+    "uroman": "dodddda"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಜಾತ್ರೆ",
+    "uroman": "jaatre"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ನಡೆಯುತ್ತದೆ",
+    "uroman": "naddeyuttade"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ದೃಷ್ಟಿ",
+    "uroman": "drsstti"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಮಂದವಾದ",
+    "uroman": "mamdavaada"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಕಾರಣ",
+    "uroman": "kaaranna"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಅವರು",
+    "uroman": "avaru"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಕನ್ನಡಕ",
+    "uroman": "kannaddaka"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಧರಿಸಿದರು",
+    "uroman": "dharisidaru"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಸಂಸ್ಕೃತಿ",
+    "uroman": "samskrti"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಪರಂಪರೆಯನ್ನು",
+    "uroman": "parampareyannu"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಉಳಿಸಬೇಕು",
+    "uroman": "ullisabeeku"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ರೈಲು",
+    "uroman": "railu"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ನಿಲ್ದಾಣಕ್ಕೆ",
+    "uroman": "nildaannakke"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಸಮಯಕ್ಕೆ",
+    "uroman": "samayakke"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಸರಿಯಾಗಿ",
+    "uroman": "sariyaagi"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಬಂತು",
+    "uroman": "bamtu"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಅಮ್ಮ",
+    "uroman": "amma"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಅಡುಗೆಮನೆಯಲ್ಲಿ",
+    "uroman": "addugemaneyalli"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಅಡುಗೆ",
+    "uroman": "adduge"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಮಳೆ",
+    "uroman": "malle"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಬಂದರೆ",
+    "uroman": "bamdare"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಕೆರೆಗಳು",
+    "uroman": "keregallu"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ತುಂಬುತ್ತವೆ",
+    "uroman": "tumbuttave"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಹೃದಯದ",
+    "uroman": "hrdayada"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಬಡಿತ",
+    "uroman": "baddita"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಹೆಚ್ಚಾಯಿತು",
+    "uroman": "heccaayitu"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ವಿದ್ಯಾರ್ಥಿಗಳು",
+    "uroman": "vidyaarthigallu"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಪರೀಕ್ಷೆಗೆ",
+    "uroman": "pariikssege"
+  },
+  {
+    "lang": "kn",
+    "lcode": "kan",
+    "script": "Kannada",
+    "word": "ಸಿದ್ಧರಾಗುತ್ತಿದ್ದಾರೆ",
+    "uroman": "siddharaaguttiddaare"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "മലയാളം",
+    "uroman": "malayaallam"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "കേരളത്തിന്റെ",
+    "uroman": "keerallattinrre"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "ഭാഷയാണ്",
+    "uroman": "bhaassayaann"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "കൃഷി",
+    "uroman": "krssi"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "നമ്മുടെ",
+    "uroman": "nammutte"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "നാടിന്റെ",
+    "uroman": "naattinrre"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "അടിസ്ഥാനമാണ്",
+    "uroman": "attisthaanamaann"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "കുട്ടികൾ",
+    "uroman": "kuttttikalla"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "സ്കൂളിൽ",
+    "uroman": "skuullila"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "പഠിക്കുന്നു",
+    "uroman": "patthikkunnu"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "കർഷകർ",
+    "uroman": "karrassakarra"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "വയലിൽ",
+    "uroman": "vayalila"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "ജോലി",
+    "uroman": "jooli"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "ചെയ്യുന്നു",
+    "uroman": "ceyyunnu"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "മധുരപലഹാരങ്ങൾ",
+    "uroman": "madhurapalahaarangngalla"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "ഇഷ്ടമാണ്",
+    "uroman": "issttamaann"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "സൂര്യൻ",
+    "uroman": "suuryana"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "കിഴക്ക്",
+    "uroman": "killlakk"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "ഉദിക്കുന്നു",
+    "uroman": "udikkunnu"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "വൃക്ഷങ്ങളുടെ",
+    "uroman": "vrkssangngallutte"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "തണലിൽ",
+    "uroman": "tannalila"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "ഇരുന്ന്",
+    "uroman": "irunn"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "അവൻ",
+    "uroman": "avana"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "പുസ്തകം",
+    "uroman": "pustakam"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "വായിച്ചു",
+    "uroman": "vaayiccu"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "ഞങ്ങളുടെ",
+    "uroman": "nyangngallutte"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "ഗ്രാമത്തിൽ",
+    "uroman": "graamattila"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "എല്ലാ",
+    "uroman": "ellaa"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "വർഷവും",
+    "uroman": "varrassavum"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "വലിയ",
+    "uroman": "valiya"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "ഉത്സവം",
+    "uroman": "utsavam"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "നടക്കും",
+    "uroman": "nattakkum"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "കാഴ്ചശക്തി",
+    "uroman": "kaalllcashakti"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "കുറഞ്ഞതിനാൽ",
+    "uroman": "kurranynyatinaala"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "അദ്ദേഹം",
+    "uroman": "addeeham"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "കണ്ണട",
+    "uroman": "kannnnatta"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "ധരിച്ചു",
+    "uroman": "dhariccu"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "സംസ്കാരവും",
+    "uroman": "samskaaravum"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "പാരമ്പര്യവും",
+    "uroman": "paaramparyavum"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "സംരക്ഷിക്കണം",
+    "uroman": "samrakssikkannam"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "തീവണ്ടി",
+    "uroman": "tiivanntti"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "സമയത്ത്",
+    "uroman": "samayatt"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "സ്റ്റേഷനിൽ",
+    "uroman": "srrrreessanila"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "എത്തി",
+    "uroman": "etti"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "അമ്മ",
+    "uroman": "amma"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "അടുക്കളയിൽ",
+    "uroman": "attukkallayila"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "ഭക്ഷണം",
+    "uroman": "bhakssannam"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "ഉണ്ടാക്കുന്നു",
+    "uroman": "unnttaakkunnu"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "മഴ",
+    "uroman": "mallla"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "പെയ്താൽ",
+    "uroman": "peytaala"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "പുഴകൾ",
+    "uroman": "pulllakalla"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "നിറയും",
+    "uroman": "nirrayum"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "ഹൃദയമിടിപ്പ്",
+    "uroman": "hrdayamittipp"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "വർധിച്ചു",
+    "uroman": "varradhiccu"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "വിദ്യാർത്ഥികൾ",
+    "uroman": "vidyaarratthikalla"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "പരീക്ഷയ്ക്ക്",
+    "uroman": "pariikssaykk"
+  },
+  {
+    "lang": "ml",
+    "lcode": "mal",
+    "script": "Malayalam",
+    "word": "തയ്യാറെടുക്കുന്നു",
+    "uroman": "tayyaarrettukkunnu"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "માઁ",
+    "uroman": "maa"
+  },
+  {
+    "lang": "gu",
+    "lcode": "guj",
+    "script": "Gujarati",
+    "word": "હુઁ",
+    "uroman": "hu"
+  },
+  {
+    "lang": "pa",
+    "lcode": "pan",
+    "script": "Gurmukhi",
+    "word": "ਮਾਁ",
+    "uroman": "maa"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "রাষ্ট্র",
+    "uroman": "raassttra"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "মন্ত্র",
+    "uroman": "mantra"
+  },
+  {
+    "lang": "as",
+    "lcode": "asm",
+    "script": "Bengali",
+    "word": "ছাত্ৰ",
+    "uroman": "chhaatra"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "বংশ",
+    "uroman": "bangsh"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "রং",
+    "uroman": "rang"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "সংগীত",
+    "uroman": "sanggiit"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "শুভেচ্ছা",
+    "uroman": "shubhechchhaa"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "হয়",
+    "uroman": "hay"
+  },
+  {
+    "lang": "bn",
+    "lcode": "ben",
+    "script": "Bengali",
+    "word": "নয়",
+    "uroman": "nay"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "समय़",
+    "uroman": "samay"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "ऋषि",
+    "uroman": "rassi"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "ऋतु",
+    "uroman": "ratu"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "मातृ",
+    "uroman": "maatr"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "मातृ",
+    "uroman": "maatra"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "ऋषिः",
+    "uroman": "rassih"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "पितॄणाम्",
+    "uroman": "pitrrnnaam"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "क्ऌप्त",
+    "uroman": "klapta"
   }
 ]

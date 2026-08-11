@@ -19,16 +19,33 @@ function scriptOfCodepoint(cp: number): ScriptName | null {
   for (const [name, lo, hi] of RANGES) {
     if (cp >= lo && cp <= hi) return name;
   }
-  if ((cp >= 0x41 && cp <= 0x5a) || (cp >= 0x61 && cp <= 0x7a) || cp === 0x27 /* ' */) {
+  if ((cp >= 0x41 && cp <= 0x5a) || (cp >= 0x61 && cp <= 0x7a)) {
     return "Latin";
   }
   return null; // digits, punctuation, unrelated symbols -- not script-bearing
 }
 
+/**
+ * The apostrophe is Unicode Script=Common: it belongs to no script, and
+ * cleanNativeWord deliberately keeps it. It used to be classified as Latin
+ * here, which was fine for "don't" but wrong for Bodo, which writes /ɯ/ with
+ * an apostrophe -- बर' ("Boro", the language's own name) came out "Mixed" and
+ * romanizeWord threw on it (found in Task 14, when Bodo fixture sentences
+ * first included the word). Treating it as a *weak* Latin signal keeps both
+ * behaviours: any real letter in the word decides the script, and the
+ * apostrophe only decides when nothing else does.
+ */
+const WEAK_LATIN = new Set([0x27 /* ' */]);
+
 export function detectScript(word: string): ScriptName | "Mixed" | "Unknown" {
   let found: ScriptName | null = null;
+  let weak: ScriptName | null = null;
   for (const ch of word) {
     const cp = ch.codePointAt(0)!;
+    if (WEAK_LATIN.has(cp)) {
+      weak = "Latin";
+      continue;
+    }
     const script = scriptOfCodepoint(cp);
     if (script === null) continue; // combining marks / punctuation: ignore for detection
     if (found === null) {
@@ -37,5 +54,5 @@ export function detectScript(word: string): ScriptName | "Mixed" | "Unknown" {
       return "Mixed";
     }
   }
-  return found ?? "Unknown";
+  return found ?? weak ?? "Unknown";
 }
