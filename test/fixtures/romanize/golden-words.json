@@ -3699,6 +3699,27 @@
     "lang": "sa",
     "lcode": "san",
     "script": "Devanagari",
+    "word": "ॐ",
+    "uroman": "om"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "नमः",
+    "uroman": "namah"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "शिवाय",
+    "uroman": "shivaaya"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
     "word": "अ॒ग्निमी॑ळे",
     "uroman": "agnimiille"
   },
@@ -8447,6 +8468,34 @@
     "script": "Malayalam",
     "word": "തയ്യാറെടുക്കുന്നു",
     "uroman": "tayyaarrettukkunnu"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "ॐ",
+    "uroman": "om"
+  },
+  {
+    "lang": "hi",
+    "lcode": "hin",
+    "script": "Devanagari",
+    "word": "ॐकार",
+    "uroman": "omkaar"
+  },
+  {
+    "lang": "sa",
+    "lcode": "san",
+    "script": "Devanagari",
+    "word": "ॐकारः",
+    "uroman": "omkaarah"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ௐ",
+    "uroman": "om"
   },
   {
     "lang": "gu",

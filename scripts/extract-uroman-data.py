@@ -20,6 +20,50 @@ BRAHMIC_SCRIPTS = [
     "Tamil", "Telugu", "Kannada", "Malayalam",
 ]
 
+# Unicode block ranges per Brahmic script, used to widen the character set
+# beyond UnicodeDataProps.txt's per-script `::char` list.
+#
+# That list is NOT complete. The Arabic branch at the bottom of this file
+# already had to stop trusting it (it omits every harakat/diacritic); the
+# Brahmic branch had the same defect and it went unnoticed until Task 14's
+# review: U+0950 DEVANAGARI OM and U+0BD0 TAMIL OM are absent from the
+# Devanagari/Tamil `::char` lists, so the `::u 0950 ::r om` entry that DOES
+# exist in UnicodeDataOverwrite.txt (line 34) was being filtered out and never
+# reached devanagari.json/tamil.json -- making ordinary text like
+# "ॐ नमः शिवाय" throw instead of romanizing ॐ to "om" (real uroman: "om",
+# for hin, san and tam alike).
+#
+# Ranges below are each script's main block plus the supplementary blocks
+# whose characters UnicodeDataProps.txt already lists under that script name
+# (Devanagari Extended for ꣲ/꣼..., Tamil Supplement for the accounting
+# signs), so widening never *narrows* the previous set -- the final character
+# set is the union of this and the `::char` list.
+BRAHMIC_BLOCK_RANGES = {
+    "Devanagari": [(0x0900, 0x097F), (0xA8E0, 0xA8FF), (0x11B00, 0x11B5F)],
+    "Bengali": [(0x0980, 0x09FF)],
+    "Gurmukhi": [(0x0A00, 0x0A7F)],
+    "Gujarati": [(0x0A80, 0x0AFF)],
+    "Oriya": [(0x0B00, 0x0B7F)],
+    "Tamil": [(0x0B80, 0x0BFF), (0x11FC0, 0x11FFF)],
+    "Telugu": [(0x0C00, 0x0C7F)],
+    "Kannada": [(0x0C80, 0x0CFF)],
+    "Malayalam": [(0x0D00, 0x0D7F)],
+}
+
+
+def block_chars(script_name):
+    """Every assigned codepoint in the script's Unicode block(s)."""
+    out = set()
+    for lo, hi in BRAHMIC_BLOCK_RANGES[script_name]:
+        for cp in range(lo, hi + 1):
+            c = chr(cp)
+            try:
+                unicodedata.name(c)
+            except ValueError:
+                continue  # unassigned codepoint
+            out.add(c)
+    return out
+
 
 def parse_double_colon_line(line):
     """Parses a '::key value ::key2 value2 ...' line into a dict of key->value.
@@ -78,6 +122,13 @@ def load_script_char_props(unicode_data_props_path):
                 "chars": chars,
                 "vowelSigns": vowel_signs,
                 "virama": virama_chars[0] if virama_chars else None,
+                # Exactly what uroman's chr_script_name() reports for this
+                # script: load_unicode_data_props (uroman.py lines 499-505)
+                # populates dict_str[('script', char)] from the ::char list
+                # AND the ::numeral list, nothing else. Kept separate from
+                # "chars" because the abugida rules key off script membership
+                # while the romanization tables are global.
+                "scriptChars": chars + list(fields.get("numeral", "")),
             }
     return scripts
 
@@ -219,7 +270,10 @@ def main():
     # We keep BOTH single-char and multi-char (e.g. nukta sequences) entries;
     # the JS lookup must try multi-char sequences first (longest match).
     for script_name, props in script_props.items():
-        char_set = set(props["chars"])
+        # Union of UnicodeDataProps.txt's `::char` list and the script's real
+        # Unicode block(s) -- see BRAHMIC_BLOCK_RANGES for why the `::char`
+        # list alone is not enough (it drops ॐ / ௐ, among others).
+        char_set = set(props["chars"]) | block_chars(script_name)
         table = {}
         cats = {}
         for s, t, cat in auto_entries:
@@ -258,7 +312,7 @@ def main():
         # (uroman.py lines 1710-1717) and in is_at_end_of_word's nukta-skipping
         # loop (line 1342). Without categories for those characters the engine
         # cannot reproduce either rule.
-        for s in props["chars"]:
+        for s in sorted(char_set):
             cats.setdefault(s, unicodedata.category(s))
 
         out = {
@@ -301,9 +355,39 @@ def main():
             # rather than from `table`, precisely because they are absent from
             # it.
             "nuktaChars": sorted(
-                c for c in props["chars"]
+                c for c in char_set
                 if "NUKTA" in (auto_names.get(c) or unicodedata.name(c, ""))
             ),
+            # Exactly the characters uroman assigns to this script -- i.e. the
+            # set for which chr_script_name() returns this script's name (its
+            # ::char + ::numeral lists; asserted char-for-char against the
+            # installed uroman package below). NOT the widened block set used
+            # for `chars` above.
+            #
+            # Three of uroman's abugida rules key off script membership rather
+            # than off the romanization:
+            #   * add_default_abugida_vowel's very first act (uroman.py lines
+            #     1660-1663) is
+            #         script_name = uroman.chr_script_name(first_s_char)
+            #         script = self.uroman.scripts[script_name.lower()]
+            #         if not (abugida_default_vowels := ...): return rom
+            #     -- for a character uroman assigns to no script,
+            #     chr_script_name returns "" and the function returns the bare
+            #     romanization: no default vowel, in any position, ever.
+            #   * line 1730, `chr_script_name(prev_s_char) != script_name`
+            #     -> base_rom_plus_vowel.
+            #   * line 1734/1741, `chr_script_name(next_s_char) == script_name`
+            #     -> base_rom_plus_vowel, else the raw `rom`.
+            # The last two are only reachable when a neighbour is script-less,
+            # which is exactly what the block-range widening introduces -- so
+            # the two lists must stay separate. Romanization tables are global
+            # (which is why ॐ -> "om" has to be captured at all); abugida
+            # behaviour is script-gated. Verified against real uroman:
+            # क꣭ (san) -> "kan" not "kana"; ꣬॰ (hin) -> "k." not "ka.";
+            # कु꣯क (hin) -> "kurk"; உறௐ (tam) -> "urom" not "uraom";
+            # ꣯ऌअ (san) -> "rlaa" (the ऌ after a script-less char keeps its
+            # vowel via line 1730).
+            "scriptChars": sorted(set(props["scriptChars"])),
         }
         out_path = os.path.join(out_dir, f"{script_name.lower()}.json")
         with open(out_path, "w", encoding="utf-8") as f:

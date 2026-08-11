@@ -116,6 +116,14 @@ interface Unit {
    * entirely (uroman.py line 1342-1345) rather than asking whether they
    * block, so the *next* unit after one decides word-finality. */
   isNukta: boolean;
+  /** Whether uroman assigns this unit's first / last source char to this
+   * script. uroman's abugida rules compare `chr_script_name(prev_s_char)` and
+   * `chr_script_name(next_s_char)` against the current span's script (lines
+   * 1730 and 1734), and prev_s_char / next_s_char are the source characters
+   * immediately adjacent to the span -- i.e. the previous unit's LAST char
+   * and the next unit's FIRST char. */
+  firstInScript: boolean;
+  lastInScript: boolean;
   /** True if this unit's first character immediately follows a virama in the
    * source word (i.e. it's the second consonant of an explicit C-virama-C
    * cluster, such as a geminate or conjunct). See deletesFinalSchwa's
@@ -237,6 +245,7 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
   const units: Unit[] = [];
   const vocalicSet = new Set(data.vocalicChars);
   const nuktaSet = new Set(data.nuktaChars);
+  const scriptSet = new Set(data.scriptChars);
 
   /** Python's str.isalpha() for a single char, which is what uroman's
    * is_at_start_of_word / is_at_end_of_word test the neighbouring *source*
@@ -266,7 +275,17 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
     units.push({
       rom,
       raw,
-      pending,
+      // uroman.py lines 1660-1663: add_default_abugida_vowel keys off
+      // chr_script_name(first_s_char) and returns the bare romanization
+      // immediately for any character it assigns to no script. Our tables
+      // deliberately include such characters (ॐ -> "om", । -> ".", the
+      // COMBINING DEVANAGARI LETTERs) because uroman's romanization data is
+      // global; `scriptChars` is the script-gated subset that may take a
+      // default vowel. Applied here, centrally, so every call site inherits
+      // it. Verified: क꣭ (san) -> "kan", not "kana".
+      pending: pending && scriptSet.has(srcFirst),
+      firstInScript: scriptSet.has(srcFirst),
+      lastInScript: scriptSet.has(srcLast),
       precededByVirama: prevWasVirama,
       vocalic: vocalicSet.has(srcLast),
       blocksWordStart: isAlphaChar(srcLast) || /[a-z]$/i.test(tableRom),
@@ -393,9 +412,15 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
       const nextC = codepoints[i + 1];
       const nextRawRom = nextC !== undefined ? chars[nextC] : undefined;
       if (nextRawRom !== undefined) {
+        // No category gate on the following character: uroman's condition is
+        // the regex alone. ADDAK before the Gurmukhi BINDI/TIPPI (nonspacing
+        // marks whose "+m" entry tail-strips to "m", which the regex matches)
+        // really does double -- verified against real uroman:
+        // ਕੱਂਕ -> "kammk", ਕੱਂ -> "kamm", ਕੱੰ -> "kamm", ਕੱੰਕ -> "kammk",
+        // ਸਕੱਂਕ -> "sakmmk". An earlier `isLetter &&` gate here suppressed
+        // that (6 mismatches in Task 14's review sweep).
         const cleanNext = stripRomTail(nextRawRom).rom;
-        const isLetter = (categories[nextC] ?? "").startsWith("L");
-        if (isLetter && ADDAK_DOUBLES.test(cleanNext)) {
+        if (ADDAK_DOUBLES.test(cleanNext)) {
           // The ADDAK's *emitted* romanization is the doubled consonant, but
           // uroman produces that by expanding the FOLLOWING consonant's edge
           // leftwards (expand_rom_with_special_chars, uroman.py line 1434-1445)
@@ -446,7 +471,13 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
       const prev = units[units.length - 1];
       if (resolved.pending) {
         if (prev?.pending) prev.pending = false; // uroman line 1704: no vowel, ever
-        pushUnit(c, c, resolved.rom, t.rom, true);
+        // The same nonspacing-mark-then-vowel-sign/virama lookahead the letter
+        // and multi-char paths apply (uroman.py lines 1710-1717) -- a vocalic
+        // sign is an ordinary pending span and is subject to it too. Only
+        // reachable via orthographically invalid input (a vocalic vowel sign
+        // followed by a mark and then a *second* vowel sign), but uroman does
+        // apply it there: कृ + U+0900 + ि (san) -> "kri", not "krai".
+        pushUnit(c, c, resolved.rom, t.rom, !closedByMarkThenVowelSign(i + 1));
       } else if (prev?.pending) {
         prev.rom += resolved.rom;
         prev.pending = false;
@@ -563,11 +594,14 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
     }
     const withVowel = u.rom + defaultVowel; // uroman's base_rom_plus_vowel
     const prev = units[idx - 1];
-    // is_at_end_of_word skips over nuktas (uroman.py line 1342-1345), so the
-    // next *non-nukta* unit is the one that decides word-finality.
-    let nextIdx = idx + 1;
-    while (units[nextIdx]?.isNukta && nextIdx + 1 < units.length) nextIdx += 1;
-    const next = units[nextIdx];
+    // The literal next unit -- what uroman's `next_s_char = s[end]` sees, used
+    // by the script comparison on line 1734.
+    const next = units[idx + 1];
+    // is_at_end_of_word skips over nuktas (uroman.py line 1342-1345), so a
+    // *different*, nukta-skipped neighbour decides word-finality.
+    let endIdx = idx + 1;
+    while (units[endIdx]?.isNukta && endIdx + 1 < units.length) endIdx += 1;
+    const nextForWordEnd = units[endIdx];
     if (u.precededByVirama) {
       // line 1718 -- see deletesFinalSchwa's companion comment above.
       out += withVowel;
@@ -583,15 +617,30 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
       // romanization, so it is a no-op here and is left unimplemented rather
       // than added as untestable dead code.)
       out += withVowel;
-    } else if (next === undefined || !next.blocksWordEnd) {
+    } else if (nextForWordEnd === undefined || !nextForWordEnd.blocksWordEnd) {
       // line 1723, is_at_end_of_word -- same asymmetry as above: only the
       // immediately following span is consulted, so a trailing empty-rom mark
       // does not stop this unit from being word-final (कक॑ (hin) -> "kak").
       out += deletesFinalSchwa(script, lcode) ? u.raw : withVowel;
+    } else if (!prev.lastInScript) {
+      // line 1730, `chr_script_name(prev_s_char) != script_name`. Reachable
+      // because our tables intentionally carry characters uroman assigns to
+      // no script (ॐ, danda, the COMBINING DEVANAGARI LETTERs) -- a letter
+      // right after one of those keeps its default vowel even where the rules
+      // below would drop it. Verified: ꣯ऌअ (san) -> "rlaa".
+      out += withVowel;
     } else if (u.vocalic) {
       out += u.rom; // line 1732
-    } else {
+    } else if (next.firstInScript) {
       out += withVowel; // line 1734
+    } else {
+      // line 1741, the final `return rom` fall-through: the next character
+      // exists but belongs to another script (in practice, to none). Note it
+      // returns the *raw* romanization, like the schwa-deletion branch, not
+      // base_rom + vowel. Verified: உறௐ (tam) -> "urom" (not "uraom") --
+      // Tamil never deletes a word-final schwa, so this is the only rule that
+      // can strip one; வॺकणष꣯ … likewise ष -> "ss" before a script-less mark.
+      out += u.raw;
     }
   }
   return out;

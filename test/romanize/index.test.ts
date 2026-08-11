@@ -35,6 +35,19 @@ describe("romanizeWord", () => {
     expect(romanizeWord("बर'", "brx-IN")).toBe("bar'");
   });
 
+  // Task 14 review: ॐ / ௐ used to throw, because the extractor scoped each
+  // script's character set to UnicodeDataProps.txt's incomplete `::char`
+  // list and so filtered out UnicodeDataOverwrite.txt's `::u 0950 ::r om`.
+  // Verified against real uroman: "om" for hin, san and tam alike.
+  it("romanizes ॐ in ordinary Hindi/Sanskrit text", () => {
+    expect(romanizeWords(["ॐ", "नमः", "शिवाय"], "hi-IN")).toEqual(["om", "namah", "shivaay"]);
+    expect(romanizeWord("ॐ", "sa-IN")).toBe("om");
+  });
+
+  it("romanizes ௐ in Tamil text", () => {
+    expect(romanizeWord("ௐ", "ta-IN")).toBe("om");
+  });
+
   it("supports exactly the 20 documented languages", () => {
     expect(SUPPORTED_LANGUAGE_CODES.sort()).toEqual(
       [

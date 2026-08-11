@@ -22,6 +22,12 @@ export interface BrahmicScriptData {
   /** Chars whose Unicode name contains "NUKTA" -- see brahmic.ts's nukta
    * handling (uroman.py lines 1342 and 1710-1717). */
   nuktaChars: string[];
+  /** Exactly the chars uroman's chr_script_name() assigns to this script.
+   * Drives all three of uroman's script-gated abugida rules -- see the
+   * `scriptSet` uses in brahmic.ts. Neither a subset nor a superset of
+   * `chars`: it excludes script-neutral characters that romanize (ॐ, danda)
+   * and includes script characters that don't (the nukta). */
+  scriptChars: string[];
 }
 
 const DATA: Record<BrahmicScript, BrahmicScriptData> = {

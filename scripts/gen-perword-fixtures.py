@@ -145,6 +145,8 @@ EXTRA_SAMPLES = [
     ("sa", "san", "Devanagari", "ऋषयः तपः कुर्वन्ति।"),
     ("sa", "san", "Devanagari", "धर्मो रक्षति रक्षितः।"),
     ("sa", "san", "Devanagari", "जीवने सत्यस्य महत्त्वम् अस्ति।"),
+    ("sa", "san", "Devanagari", "ॐ नमः शिवाय।"),
+    ("sa", "san", "Devanagari", "ॐ शान्तिः शान्तिः शान्तिः।"),
     # Vedic Sanskrit, Rigveda 1.1.1 -- real accented text, and the only
     # realistic source of the Devanagari stress signs U+0951 UDATTA and
     # U+0952 ANUDATTA. Those romanize to the empty string, which (Task 14)
@@ -354,6 +356,17 @@ EXTRA_SAMPLES = [
 # character soup -- they are listed separately only because forcing them into
 # a sentence would have meant inventing unnatural prose.
 EXTRA_WORDS = [
+    # U+0950 DEVANAGARI OM and U+0BD0 TAMIL OM. Both throw a RomanizeError
+    # until scripts/extract-uroman-data.py stops scoping the Brahmic character
+    # set to UnicodeDataProps.txt's incomplete per-script `::char` list (which
+    # omits them, so UnicodeDataOverwrite.txt's `::u 0950 ::r om` entry was
+    # being filtered out). Real uroman: ॐ -> "om" for hin/san, ௐ -> "om" for
+    # tam. This is ordinary devotional/liturgical text, not an exotic shape.
+    ("hi", "hin", "Devanagari", "ॐ"),
+    ("sa", "san", "Devanagari", "ॐ"),
+    ("hi", "hin", "Devanagari", "ॐकार"),
+    ("sa", "san", "Devanagari", "ॐकारः"),
+    ("ta", "tam", "Tamil", "ௐ"),
     # Gujarati candrabindu U+0A81. Modern Gujarati almost always writes
     # nasalization with anusvara (ં), so no ordinary prose sentence above
     # contains ઁ -- but it is a live character in Gujarati poetry and in
