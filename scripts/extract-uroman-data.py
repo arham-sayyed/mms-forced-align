@@ -316,6 +316,12 @@ def main():
         for line in f:
             if line.startswith("#") or not line.strip():
                 continue
+            # Same trailing-comment strip the other loaders in this file
+            # apply (e.g. load_rom_table above) -- kept for consistency, even
+            # though no currently-in-scope (urd/kas/snd, Arabic-block) line
+            # actually has a trailing `  #...` comment today (verified: this
+            # is a no-op against the current data).
+            line = re.sub(r"\s{2,}#.*$", "", line)
             fields = parse_double_colon_line(line)
             s, t = fields.get("s"), fields.get("t")
             if not s or t is None:
@@ -330,7 +336,15 @@ def main():
             elif "use-only-at-start-of-word" in fields:
                 arabic_start_of_word[s] = t
             elif "use-only-at-end-of-word" in fields:
-                pass  # none apply to urd/kas/snd today; nothing to record
+                # Unreachable today: the only 2 such entries in
+                # romanization-table.txt (هٔ and ه) are both ::lcode fas
+                # (Farsi), already filtered out by the lcode check above --
+                # not because no multi-char end-of-word entries exist at all.
+                # Kept as a real branch (not merged into the `else` below)
+                # so a future urd/kas/snd-scoped end-of-word entry is
+                # visibly ignored here rather than silently misfiled into
+                # arabic_multichar as if it applied everywhere.
+                pass
             else:
                 arabic_multichar[s] = t
 
