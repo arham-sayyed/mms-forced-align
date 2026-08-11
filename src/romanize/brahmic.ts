@@ -93,6 +93,51 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
       continue;
     }
 
+    // GURMUKHI SIGN ADDAK (U+0A71): a gemination mark that doubles the
+    // *following* consonant -- structurally the opposite of every other mark
+    // handled here (which all modify the *preceding* unit). Verified against
+    // real uroman (python `uroman` package) on multiple words, not just the
+    // single golden fixture:
+    //   ਅੱਜ  -> ajja     ਪੱਕਾ -> pakkaa   ਪੱਕ -> pakka
+    //   ਅੱਕ  -> akka     ਸੱਚ  -> sacca    ਸੱਚਾ -> saccaa
+    //   ਕੱਪ  -> kappa    ਕੱਪੜਾ -> kapparraa  ਬੱਚਾ -> baccaa
+    // The pattern: the doubled consonant appears TWICE in the output -- once
+    // as a bare/closed unit contributed by the ADDAK mark itself (no vowel,
+    // ever), and once as the SAME following character's own ordinary
+    // vowel-bearing contribution, produced by letting the main loop continue
+    // to process that character normally (we only consume the ADDAK mark
+    // itself here, not the consonant after it).
+    //
+    // Crucially, that second (normal) contribution must NOT be subject to
+    // word-final schwa deletion even for lcodes that normally delete it
+    // (e.g. pan): ਪੱਕ -> pakka keeps the final "a", not "pakk". This is the
+    // exact same exception already implemented for units immediately
+    // following a virama (see deletesFinalSchwa's companion comment above
+    // and the `precededByVirama` field) -- real uroman's source
+    // (uroman.py's add_default_abugida_vowel) applies literally the same
+    // `is-virama(prev_char)` check to decide this, and ADDAK's doubling
+    // mechanism (expand_rom_with_special_chars) runs on top of that
+    // already-resolved (schwa-kept) romanization. So we reuse the
+    // `prevWasVirama` / `precededByVirama` machinery for the character
+    // following ADDAK rather than inventing a parallel flag.
+    if (c === "ੱ") {
+      const nextC = codepoints[i + 1];
+      const nextRawRom = nextC !== undefined ? chars[nextC] : undefined;
+      if (nextRawRom !== undefined) {
+        const cleanNext = nextRawRom.startsWith("+") ? nextRawRom.slice(1) : nextRawRom;
+        const isLetter = (categories[nextC] ?? "").startsWith("L");
+        if (isLetter && CONSONANT_ONLY.test(cleanNext)) {
+          units.push({ rom: cleanNext, pending: false, precededByVirama: prevWasVirama });
+          prevWasVirama = true;
+          i += 1; // consume only the ADDAK mark; the next iteration reprocesses nextC normally
+          continue;
+        }
+      }
+      // No following consonant to double (end of word, or next char isn't a
+      // plain consonant) -- fall through to the normal chars[] lookup below,
+      // which resolves ADDAK to "'" per uroman's own fallback rule.
+    }
+
     if (Object.prototype.hasOwnProperty.call(vowelSigns, c)) {
       const prev = units[units.length - 1];
       if (prev?.pending) {
