@@ -35,6 +35,48 @@ function resolveLetterUnit(rom: string, defaultVowel: string): { rom: string; pe
   return { rom, pending: false };
 }
 
+/**
+ * uroman's "rom tail" rule, ported from add_romanization (uroman.py ~line
+ * 1846-1848) plus its companion early-out in add_default_abugida_vowel
+ * (~line 1689-1690):
+ *
+ *     if regex.match(r'\+(m|ng|n|h|r)', rom):
+ *         rom, edge_annotation = rom[1:], 'rom tail'
+ *     new_rom = self.add_default_abugida_vowel(rom, start, end, annotation=edge_annotation)
+ *     ...
+ *     if 'tail' in annotation:
+ *         return rom          # <- never gets a default abugida vowel
+ *
+ * A leading "+" in a romanization target (uroman's own data notation for
+ * "this attaches to the preceding syllable as a tail", used for
+ * anusvara/candrabindu/visarga-type signs) is stripped *and* permanently
+ * disqualifies that unit from default-vowel insertion.
+ *
+ * For most such characters this is redundant with our category check, since
+ * they are combining marks (Mn/Mc) and therefore never letters. But three
+ * of the nine in-scope scripts have a "+"-target character whose Unicode
+ * General Category really is a letter (Lo), so without this rule they get a
+ * spurious default vowel:
+ *   Tamil     U+0B83 TAMIL SIGN VISARGA (aytam) "+h"
+ *   Bengali   U+09FC BENGALI LETTER VEDIC ANUSVARA "+m"
+ *   Malayalam U+0D04 MALAYALAM LETTER VEDIC ANUSVARA "+m"
+ * Verified against real uroman: அஃது -> "ahtu" (not "ahatu"), ஃக -> "hka"
+ * (not "haka"), ৼক -> "mk" (not "mak"), ഄക -> "mka" (not "maka").
+ *
+ * Note the match is deliberately uroman's exact `\+(m|ng|n|h|r)` and not a
+ * bare `startsWith("+")`: uroman only strips the "+" when it is followed by
+ * one of those five targets, and would otherwise emit the "+" literally.
+ * Every "+"-prefixed entry across all nine scripts' extracted tables is one
+ * of "+m", "+ng", "+n", "+h" today, so this is behaviour-identical now and
+ * merely stays faithful if uroman's data ever grows another one.
+ */
+const ROM_TAIL = /^\+(?:m|ng|n|h|r)/;
+
+function stripRomTail(rawRom: string): { rom: string; isTail: boolean } {
+  if (ROM_TAIL.test(rawRom)) return { rom: rawRom.slice(1), isTail: true };
+  return { rom: rawRom, isTail: false };
+}
+
 interface Unit {
   rom: string;
   /** Still a bare consonant awaiting a default-vowel decision. Becomes false
@@ -88,6 +130,55 @@ function deletesFinalSchwa(script: BrahmicScript, lcode: string): boolean {
  * per-language or per-word special case.
  */
 
+/**
+ * TAMIL / SYLLABLE-POSITION NOTE (Task 9 investigation result).
+ *
+ * Tamil was expected to need a syllable-position-dependent romanization:
+ * its dental/retroflex/alveolar letters ண/ன/ற/ள/ழ/ட have auto-table targets
+ * derived from their Unicode names ("nn", "nnn", "rr", "ll", "lll", "tt"),
+ * which would produce e.g. இன்று -> "innnrru" instead of uroman's "inru",
+ * and the hypothesis was that uroman picks a shorter target in coda
+ * (pre-virama) position via a per-entry `::t-end-of-syllable` field.
+ *
+ * That is NOT what uroman does for Tamil. Traced through uroman's actual
+ * source and data:
+ *
+ *  1. `t-end-of-syllable` exists (uroman.py line 319 parses it; line 1789-1794
+ *     in simple_top_romanization_candidate_for_span applies it via
+ *     is_at_end_of_syllable), but grepping uroman's data shows every single
+ *     `::t-end-of-syllable` entry lives in romanization-table.txt lines
+ *     ~1130-1171 and is *Thai* (U+0E01 block, e.g. `::s ข ::t kh
+ *     ::t-end-of-syllable k`). No Brahmic-script entry has one. It is also
+ *     only ever read from romanization-table.txt: the `u2r` file format used
+ *     by UnicodeDataOverwrite.txt hardcodes `t_at_end_of_syllable = None`
+ *     (uroman.py line 299). So the field is structurally unavailable to the
+ *     characters in question, and no `codaTarget` data can be extracted for
+ *     them.
+ *
+ *  2. What uroman actually does is much simpler and position-independent:
+ *     UnicodeDataOverwrite.txt overrides those letters outright, in every
+ *     position --
+ *         ::u 0B9F ::r t   ::comment instead of Tamil TT(A)
+ *         ::u 0BA3 ::r n   ::comment instead of Tamil NN(A)
+ *         ::u 0BA9 ::r n   ::comment instead of Tamil NNN(A)
+ *         ::u 0BB1 ::r r   ::comment instead of Tamil RR(A)
+ *         ::u 0BB3 ::r l   ::comment instead of Tamil LL(A)
+ *         ::u 0BB4 ::r l   ::comment instead of Tamil LLL(A)
+ *     (0B9F is then further overridden to "d" by romanization-table.txt.)
+ *     uroman therefore does not distinguish ந/ண/ன or ர/ற at all -- they all
+ *     romanize the same everywhere, onset or coda.
+ *
+ * Our extractor already reads UnicodeDataOverwrite.txt (added in Task 5), so
+ * this engine inherits the correct behaviour with no coda logic at all. This
+ * was confirmed by a 1023-word differential run against real uroman covering
+ * every Tamil consonant in onset position with all 12 vowel signs, in
+ * word-final coda position, in geminates, and in every coda+onset consonant
+ * pair, plus 20 real Tamil sentences: zero mismatches involving these
+ * letters. No `codaTarget` field is added, because uroman has no such data
+ * for any script this engine supports -- adding one would be speculative
+ * dead code, not a ported mechanism.
+ */
+
 export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: string): string {
   const data = loadBrahmicScriptData(script);
   const { chars, categories, vowelSigns, virama, multiCharOverrides, defaultVowel } = data;
@@ -110,7 +201,14 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
       }
     }
     if (matchedRom !== null) {
-      units.push({ rom: matchedRom, pending: CONSONANT_ONLY.test(matchedRom), precededByVirama: prevWasVirama });
+      // uroman applies the "+"-tail rule to every romanization it looks up,
+      // for spans of any length -- so multi-char overrides get it too.
+      const t = stripRomTail(matchedRom);
+      units.push({
+        rom: t.rom,
+        pending: !t.isTail && CONSONANT_ONLY.test(t.rom),
+        precededByVirama: prevWasVirama,
+      });
       prevWasVirama = false;
       i += matchedLen;
       continue;
@@ -170,7 +268,7 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
       const nextC = codepoints[i + 1];
       const nextRawRom = nextC !== undefined ? chars[nextC] : undefined;
       if (nextRawRom !== undefined) {
-        const cleanNext = nextRawRom.startsWith("+") ? nextRawRom.slice(1) : nextRawRom;
+        const cleanNext = stripRomTail(nextRawRom).rom;
         const isLetter = (categories[nextC] ?? "").startsWith("L");
         if (isLetter && CONSONANT_ONLY.test(cleanNext)) {
           units.push({ rom: cleanNext.charAt(0), pending: false, precededByVirama: prevWasVirama });
@@ -215,9 +313,10 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
           `this character may be legitimately missing from our extracted table.`
       );
     }
-    const rom = rawRom.startsWith("+") ? rawRom.slice(1) : rawRom;
+    const { rom, isTail } = stripRomTail(rawRom);
     const isLetter = (categories[c] ?? "").startsWith("L");
-    const resolved = isLetter ? resolveLetterUnit(rom, defaultVowel) : { rom, pending: false };
+    const resolved =
+      isLetter && !isTail ? resolveLetterUnit(rom, defaultVowel) : { rom, pending: false };
     units.push({ rom: resolved.rom, pending: resolved.pending, precededByVirama: prevWasVirama });
     prevWasVirama = false;
     i += 1;

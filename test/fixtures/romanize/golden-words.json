@@ -1174,5 +1174,705 @@
     "script": "Devanagari",
     "word": "जागाय",
     "uroman": "jaagaay"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "தமிழ்",
+    "uroman": "tamil"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "மொழி",
+    "uroman": "moli"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "உலகின்",
+    "uroman": "ulakin"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "மிகப்",
+    "uroman": "mikap"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "பழமையான",
+    "uroman": "palamaiyaana"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "மொழிகளில்",
+    "uroman": "molikalil"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஒன்று",
+    "uroman": "onru"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "நேற்று",
+    "uroman": "neerru"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "சென்னைக்குச்",
+    "uroman": "cennaikkuc"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "சென்றேன்",
+    "uroman": "cenreen"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "அவர்",
+    "uroman": "avar"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஒரு",
+    "uroman": "oru"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஆசிரியர்",
+    "uroman": "aaciriyar"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "என்று",
+    "uroman": "enru"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "அனைவரும்",
+    "uroman": "anaivarum"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "சொல்கிறார்கள்",
+    "uroman": "colkiraarkal"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "இந்த",
+    "uroman": "inta"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "புத்தகத்தை",
+    "uroman": "puttakattai"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "நீங்கள்",
+    "uroman": "niingkal"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "படித்தீர்களா",
+    "uroman": "padittiirkalaa"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "காலையில்",
+    "uroman": "kaalaiyil"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "பறவைகள்",
+    "uroman": "paravaikal"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "இனிமையாகப்",
+    "uroman": "inimaiyaakap"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "பாடுகின்றன",
+    "uroman": "paadukinrana"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "எங்கள்",
+    "uroman": "engkal"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஊரில்",
+    "uroman": "uuril"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஆண்டுதோறும்",
+    "uroman": "aandutoorum"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "பெரிய",
+    "uroman": "periya"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "திருவிழா",
+    "uroman": "tiruvilaa"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "நடக்கும்",
+    "uroman": "nadakkum"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "மாணவர்கள்",
+    "uroman": "maanavarkal"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "பள்ளிக்கூடத்தில்",
+    "uroman": "pallikkuudattil"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "கவனமாகப்",
+    "uroman": "kavanamaakap"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "படிக்கிறார்கள்",
+    "uroman": "padikkiraarkal"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "அம்மா",
+    "uroman": "ammaa"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "சமையலறையில்",
+    "uroman": "camaiyalaraiyil"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "உணவு",
+    "uroman": "unavu"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "சமைத்துக்",
+    "uroman": "camaittuk"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "கொண்டிருக்கிறார்",
+    "uroman": "kondirukkiraar"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "வானம்",
+    "uroman": "vaanam"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "இருண்டு",
+    "uroman": "irundu"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "மழை",
+    "uroman": "malai"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "பெய்யத்",
+    "uroman": "peyyat"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "தொடங்கியது",
+    "uroman": "todangkiyatu"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "அவள்",
+    "uroman": "aval"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "பாட்டு",
+    "uroman": "paaddu"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "பாடுவதில்",
+    "uroman": "paaduvatil"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "திறமையானவள்",
+    "uroman": "tiramaiyaanaval"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "கடலின்",
+    "uroman": "kadalin"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "அலைகள்",
+    "uroman": "alaikal"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "கரையில்",
+    "uroman": "karaiyil"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "மோதி",
+    "uroman": "mooti"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஒலி",
+    "uroman": "oli"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "எழுப்புகின்றன",
+    "uroman": "eluppukinrana"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "நண்பர்களுடன்",
+    "uroman": "nanparkaludan"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "பேசுவது",
+    "uroman": "peecuvatu"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "எப்போதும்",
+    "uroman": "eppootum"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "மகிழ்ச்சி",
+    "uroman": "makilcci"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "அளிக்கும்",
+    "uroman": "alikkum"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "அரசாங்கம்",
+    "uroman": "aracaangkam"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "புதிய",
+    "uroman": "putiya"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "திட்டங்களை",
+    "uroman": "tiddangkalai"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "அறிவித்துள்ளது",
+    "uroman": "arivittullatu"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "விவசாயிகள்",
+    "uroman": "vivacaayikal"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "வயலில்",
+    "uroman": "vayalil"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "நெல்",
+    "uroman": "nel"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "அறுவடை",
+    "uroman": "aruvadai"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "செய்கிறார்கள்",
+    "uroman": "ceykiraarkal"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "குழந்தைகள்",
+    "uroman": "kulantaikal"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "விளையாட்டு",
+    "uroman": "vilaiyaaddu"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "மைதானத்தில்",
+    "uroman": "maitaanattil"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஓடி",
+    "uroman": "oodi"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "விளையாடுகிறார்கள்",
+    "uroman": "vilaiyaadukiraarkal"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஜன்னல்",
+    "uroman": "jannal"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "வழியாக",
+    "uroman": "valiyaaka"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "சூரிய",
+    "uroman": "cuuriya"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஒளி",
+    "uroman": "oli"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "அறைக்குள்",
+    "uroman": "araikkul"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "வந்தது",
+    "uroman": "vantatu"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "அஃது",
+    "uroman": "ahtu"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "பழைய",
+    "uroman": "palaiya"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "தமிழ்ச்",
+    "uroman": "tamilc"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "சொல்",
+    "uroman": "col"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஆகும்",
+    "uroman": "aakum"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஸ்ரீரங்கம்",
+    "uroman": "sriirangkam"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "கோயில்",
+    "uroman": "kooyil"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "காவிரி",
+    "uroman": "kaaviri"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஆற்றின்",
+    "uroman": "aarrin"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "நடுவே",
+    "uroman": "naduvee"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "அமைந்துள்ளது",
+    "uroman": "amaintullatu"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஷாப்பிங்",
+    "uroman": "ssaapping"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "மாலில்",
+    "uroman": "maalil"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "மக்கள்",
+    "uroman": "makkal"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "கூட்டம்",
+    "uroman": "kuuddam"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "அதிகமாக",
+    "uroman": "atikamaaka"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "இருந்தது",
+    "uroman": "iruntatu"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "ஹரி",
+    "uroman": "hari"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "தினமும்",
+    "uroman": "tinamum"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "உடற்பயிற்சி",
+    "uroman": "udarpayirci"
+  },
+  {
+    "lang": "ta",
+    "lcode": "tam",
+    "script": "Tamil",
+    "word": "செய்கிறான்",
+    "uroman": "ceykiraan"
   }
 ]
