@@ -49,7 +49,9 @@ describe("romanizeWord", () => {
   });
 
   it("supports exactly the 20 documented languages", () => {
-    expect(SUPPORTED_LANGUAGE_CODES.sort()).toEqual(
+    // SUPPORTED_LANGUAGE_CODES is frozen (finding #4) -- copy before sorting
+    // rather than sorting in place.
+    expect([...SUPPORTED_LANGUAGE_CODES].sort()).toEqual(
       [
         "hi-IN", "mr-IN", "ne-IN", "sa-IN", "mai-IN", "doi-IN", "kok-IN", "brx-IN",
         "bn-IN", "as-IN", "pa-IN", "gu-IN", "od-IN",
@@ -58,6 +60,32 @@ describe("romanizeWord", () => {
         "en-IN",
       ].sort()
     );
+  });
+
+  it("SUPPORTED_LANGUAGE_CODES is frozen", () => {
+    expect(Object.isFrozen(SUPPORTED_LANGUAGE_CODES)).toBe(true);
+  });
+
+  it("throws RomanizeError, not a raw TypeError, for an unrecognized language code", () => {
+    expect(() => romanizeWord("आज", "xx-IN" as any)).toThrow(RomanizeError);
+  });
+
+  // Final-review finding #1: Sindhi "۽" (U+06FD) is a real, uroman-verified
+  // word-forming character (cleanNativeWord whitelists it, arabic.json maps
+  // it to real uroman's own output "&") but "&" is not vocab-safe ([a-z']
+  // only, see src/vocab.json). romanizeWord must refuse to hand this to the
+  // aligner and fail loudly here rather than downstream as an opaque
+  // VocabError.
+  it("throws RomanizeError for Sindhi ۽, whose real-uroman romanization (\"&\") isn't vocab-safe", () => {
+    expect(() => romanizeWord("۽", "sd-IN")).toThrow(RomanizeError);
+  });
+
+  // Related empty-output case: a lone Devanagari nukta survives
+  // cleanNativeWord's \p{L}\p{M}' filter (it's a combining mark) but
+  // romanizes to "" -- the same output guard must catch empty results too,
+  // since "" technically matches /^[a-z']*$/i.
+  it("throws RomanizeError for a lone Devanagari nukta, which romanizes to an empty string", () => {
+    expect(() => romanizeWord("़", "hi-IN")).toThrow(RomanizeError);
   });
 });
 
@@ -84,8 +112,22 @@ describe("romanizeWords: matches real uroman output on full golden sentences", (
   for (const fx of goldenSentences as Array<{ lang: string; input: string; uroman_output: string }>) {
     const bcp47 = langToBcp47[fx.lang];
     if (!bcp47) continue; // sat, mni out of scope
+    const words = fx.input.split(/\s+/).map((w) => w.replace(/[।॥.,!?؟،؛]+$/gu, "")).filter(Boolean);
+
+    // Final-review finding #1: this fixture's sentence contains "۽" (Sindhi
+    // "and"), whose real-uroman romanization "&" is not vocab-safe.
+    // romanizeWord now throws RomanizeError for it (see the dedicated "۽"
+    // test above) rather than passing "&" through, so this sentence can no
+    // longer be expected to romanize successfully end to end -- verify it
+    // throws instead of silently matching stale expected output.
+    if (fx.lang === "sd") {
+      it(`[${fx.lang}] full sentence throws RomanizeError (contains non-vocab-safe "۽")`, () => {
+        expect(() => romanizeWords(words, bcp47 as any)).toThrow(RomanizeError);
+      });
+      continue;
+    }
+
     it(`[${fx.lang}] full sentence matches real uroman (modulo punctuation stripping)`, () => {
-      const words = fx.input.split(/\s+/).map((w) => w.replace(/[।॥.,!?؟،؛]+$/gu, "")).filter(Boolean);
       const expectedWords = fx.uroman_output.split(/\s+/).map((w) => w.replace(/[.,!?]+$/g, "")).filter(Boolean);
       expect(romanizeWords(words, bcp47 as any)).toEqual(expectedWords);
     });

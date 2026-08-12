@@ -8,6 +8,41 @@ import { langInfo, isBrahmicScript, SUPPORTED_LANGUAGE_CODES, type LanguageCode 
 export { RomanizeError, SUPPORTED_LANGUAGE_CODES };
 export type { LanguageCode };
 
+// Every code path through romanizeWord must end here before returning. The
+// package's entire contract with align()/alignNative() is "produce text the
+// model's vocab (26 lowercase letters + apostrophe, see src/vocab.json) can
+// consume" -- a result that doesn't satisfy that contract must never reach a
+// caller, because it would otherwise surface many layers away as an opaque
+// VocabError (or, for empty output, "wordsToTokenIds: encountered an empty
+// word") with no indication of which word or language caused it. This is
+// deliberately centralized here rather than duplicated in each engine: it
+// catches real uroman-verified outputs that are themselves not vocab-safe
+// (e.g. Sindhi "۽" -> "&", see arabic.json) as well as any engine bug that
+// might slip one through. This must NOT try to invent a different
+// romanization for the offending characters -- that would violate the
+// "exact match against real uroman" accuracy target this whole package is
+// built on. A word that can't be aligned must fail loudly with a clear
+// reason, not silently proceed into a VocabError.
+const VOCAB_SAFE = /^[a-z']*$/i;
+
+function assertVocabSafe(out: string, original: string, langCode: LanguageCode): string {
+  if (out.length === 0) {
+    throw new RomanizeError(
+      `romanizeWord: word "${original}" (${langCode}) romanized to an empty string, which cannot be aligned`
+    );
+  }
+  if (!VOCAB_SAFE.test(out)) {
+    const badChars = [...new Set([...out].filter((ch) => !/^[a-z']$/i.test(ch)))]
+      .map((ch) => `"${ch}" (U+${ch.codePointAt(0)!.toString(16).toUpperCase().padStart(4, "0")})`)
+      .join(", ");
+    throw new RomanizeError(
+      `romanizeWord: word "${original}" (${langCode}) romanized to "${out}", which contains ` +
+        `character(s) outside the vocab-safe [a-z'] set: ${badChars}`
+    );
+  }
+  return out;
+}
+
 export function romanizeWord(word: string, langCode: LanguageCode): string {
   const { lcode, script: expectedScript } = langInfo(langCode);
   const cleaned = cleanNativeWord(word);
@@ -26,7 +61,7 @@ export function romanizeWord(word: string, langCode: LanguageCode): string {
         `romanizeWord: expected Latin script for language "en-IN", got ${detected} in word "${word}"`
       );
     }
-    return cleaned;
+    return assertVocabSafe(cleaned, word, langCode);
   }
 
   const detected = detectScript(cleaned);
@@ -37,7 +72,7 @@ export function romanizeWord(word: string, langCode: LanguageCode): string {
     // `uroman.romanize_string("मैंने Hello कहा", lcode="hin")` ->
     // "maimne Hello kahaa", capital H preserved), so this must match the
     // en-IN branch above and preserve case rather than lowercase.
-    return cleaned;
+    return assertVocabSafe(cleaned, word, langCode);
   }
   if (detected !== expectedScript) {
     throw new RomanizeError(
@@ -46,10 +81,10 @@ export function romanizeWord(word: string, langCode: LanguageCode): string {
   }
 
   if (isBrahmicScript(expectedScript)) {
-    return romanizeBrahmicWord(cleaned, expectedScript, lcode);
+    return assertVocabSafe(romanizeBrahmicWord(cleaned, expectedScript, lcode), word, langCode);
   }
   if (expectedScript === "Arabic") {
-    return romanizePersoArabicWord(cleaned);
+    return assertVocabSafe(romanizePersoArabicWord(cleaned), word, langCode);
   }
   throw new RomanizeError(`romanizeWord: unsupported script ${expectedScript} for language "${langCode}"`);
 }
