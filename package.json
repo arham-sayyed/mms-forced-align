@@ -1,6 +1,6 @@
 {
   "name": "mms-forced-align",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CTC forced alignment (word-level timestamps) using Meta's MMS forced-aligner model, in Node.js/TypeScript.",
   "type": "commonjs",
   "main": "./dist/index.js",
@@ -35,7 +35,11 @@
     "subtitles",
     "speech-to-text",
     "karaoke",
-    "word-timestamps"
+    "word-timestamps",
+    "indic-languages",
+    "romanization",
+    "hindi",
+    "devanagari"
   ],
   "license": "MIT",
   "author": "Arham Sayyed",

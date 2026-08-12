@@ -92,10 +92,91 @@ const words = transcript.split(" ").map((w) => w.replace(/[^\w']/g, ""));
 
 **Not yet supported:**
 - The `<star>` token for out-of-vocabulary/deleted words.
-- Non-Latin scripts requiring uroman-style romanization.
 - Batch alignment of multiple clips in one call.
 - GPU execution.
 - Chunking of long audio — split long files yourself before aligning.
+
+## Indic native-script romanization
+
+The model's vocabulary is Latin-only, but `align()` still requires words in
+that vocabulary. For text in an Indic script, this package can romanize the
+transcript internally and align against the romanized form, while handing
+you back timings keyed to your original native-script words. Three exports
+cover this:
+
+- `romanizeWord(word, langCode)` / `romanizeWords(words, langCode)` —
+  transliterate one word or a list of words from a supported native script to
+  the Latin form the model expects. Throws `RomanizeError` rather than
+  silently dropping or mangling a word: on a script mismatch (e.g. Tamil text
+  passed with `langCode: "hi-IN"`) or on content that can't be romanized.
+  Already-Latin words (e.g. an English brand name code-switched into an Indic
+  sentence) pass through unchanged, case preserved, instead of erroring.
+- `alignNative(aligner, waveform, sampleRate, nativeWords, langCode)` —
+  romanizes `nativeWords` internally, aligns the romanized form, then remaps
+  the resulting timings back onto your original native-script words by
+  index. Word count is guaranteed to match on both sides — it throws rather
+  than ever returning a mis-indexed or word-dropped result.
+
+```typescript
+import { createAligner, alignNative } from "mms-forced-align";
+
+const aligner = await createAligner();
+const timings = await alignNative(
+  aligner,
+  waveform,       // Float32Array, mono PCM, values in [-1, 1]
+  16000,          // sampleRate — must be exactly 16000
+  ["आज", "मैंने", "काफी", "कुछ", "किया"],
+  "hi-IN"
+);
+// [{ word: "आज", start: ..., end: ... }, ...] -- native-script words, real timings
+
+await aligner.dispose();
+```
+
+`SUPPORTED_LANGUAGE_CODES` (and the `LanguageCode` type) list every value
+accepted as `langCode`. As of this release there are 21 entries — 20 Indic
+languages plus `en-IN` as a Latin passthrough (for already-romanized/English
+text mixed into an otherwise-Indic pipeline):
+
+| `LanguageCode` | Language | Script |
+| --- | --- | --- |
+| `hi-IN` | Hindi | Devanagari |
+| `mr-IN` | Marathi | Devanagari |
+| `ne-IN` | Nepali | Devanagari |
+| `sa-IN` | Sanskrit | Devanagari |
+| `mai-IN` | Maithili | Devanagari |
+| `doi-IN` | Dogri | Devanagari |
+| `kok-IN` | Konkani | Devanagari |
+| `brx-IN` | Bodo | Devanagari |
+| `bn-IN` | Bengali | Bengali |
+| `as-IN` | Assamese | Bengali |
+| `pa-IN` | Punjabi | Gurmukhi |
+| `gu-IN` | Gujarati | Gujarati |
+| `od-IN` | Odia | Oriya |
+| `ta-IN` | Tamil | Tamil |
+| `te-IN` | Telugu | Telugu |
+| `kn-IN` | Kannada | Kannada |
+| `ml-IN` | Malayalam | Malayalam |
+| `ur-IN` | Urdu | Perso-Arabic |
+| `ks-IN` | Kashmiri | Perso-Arabic |
+| `sd-IN` | Sindhi | Perso-Arabic |
+| `en-IN` | English | Latin (passthrough) |
+
+**Not supported (explicit product decision):** `sat-IN` (Santali/Ol Chiki) and
+`mni-IN` (Manipuri/Meitei Mayek). uroman's own data for these two scripts is
+incomplete/unreliable, so porting it into this package wouldn't produce
+accurate romanization either — these may be revisited if/when upstream data
+improves.
+
+The character-level romanization data this package uses is extracted
+directly from [uroman](https://github.com/isi-nlp/uroman) (see
+[`src/romanize/data/README.md`](./src/romanize/data/README.md) for
+provenance and regeneration instructions); the romanization *algorithm* is
+this package's own from-scratch TypeScript implementation of the relevant
+subset of uroman's approach, built against that data. Practically, this
+means `romanizeWord`/`romanizeWords`/`alignNative`'s accuracy for a given
+language tracks uroman's own accuracy for that language — it is not a
+separate, hand-built approximation with its own error profile.
 
 ## Model download & licensing — read before using commercially
 
