@@ -1,6 +1,7 @@
 // test/alignNative.unit.test.ts
 import { describe, it, expect, vi } from "vitest";
 import { alignNative } from "../src/alignNative";
+import { AlignError } from "../src/align";
 import type { Aligner, WordTiming } from "../src/align";
 
 function stubAligner(): Aligner {
@@ -42,5 +43,22 @@ describe("alignNative", () => {
     await alignNative(aligner, new Float32Array(16000), 16000, ["आज"], "hi-IN");
 
     expect(alignSpy).toHaveBeenCalledWith(expect.any(Float32Array), 16000, ["aaj"]);
+  });
+
+  // Final-review finding #3: Aligner is an exported public interface
+  // (src/align.ts) -- a caller-supplied custom implementation returning a
+  // short/long timings array must not silently mis-index nativeWords[i].
+  // The bundled align() guarantees the count via decode.ts's span-count
+  // check, but alignNative() must not rely on that for a caller-supplied
+  // aligner.
+  it("throws AlignError rather than mis-indexing when a custom Aligner returns the wrong number of timings", async () => {
+    const shortAligner: Aligner = {
+      align: async (_w, _sr, words) => words.slice(0, -1).map((w, i) => ({ word: w, start: i, end: i + 1 })),
+      dispose: async () => {},
+    };
+
+    await expect(
+      alignNative(shortAligner, new Float32Array(16000), 16000, ["आज", "काफी"], "hi-IN")
+    ).rejects.toThrow(AlignError);
   });
 });

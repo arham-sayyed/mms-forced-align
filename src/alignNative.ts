@@ -33,6 +33,19 @@ export async function alignNative(
 
   const timings = await aligner.align(waveform, sampleRate, romanizedWords);
 
+  if (timings.length !== nativeWords.length) {
+    // Belt-and-suspenders on the way back out, mirroring the check above on
+    // the way in. The bundled align() guarantees timings.length matches its
+    // input via decode.ts's own span-count check, but Aligner is an exported
+    // public interface (src/align.ts) -- a caller-supplied custom
+    // implementation returning a short/long timings array would otherwise
+    // silently mis-index nativeWords[i] below rather than fail loudly.
+    throw new AlignError(
+      `alignNative: aligner returned ${timings.length} timings for ${nativeWords.length} input words -- ` +
+        `refusing to remap with a mismatched count`
+    );
+  }
+
   return timings.map((t, i) => ({
     ...t,
     word: nativeWords[i],

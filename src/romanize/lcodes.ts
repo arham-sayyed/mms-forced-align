@@ -1,6 +1,7 @@
 // src/romanize/lcodes.ts
 import type { BrahmicScript } from "./brahmic";
 import type { ScriptName } from "./scriptDetect";
+import { RomanizeError } from "./clean";
 
 export type LanguageCode =
   | "hi-IN" | "mr-IN" | "ne-IN" | "sa-IN" | "mai-IN" | "doi-IN" | "kok-IN" | "brx-IN"
@@ -46,15 +47,37 @@ const LANG_INFO: Record<LanguageCode, LangInfo> = {
   "en-IN": { lcode: "eng", script: "Latin" },
 };
 
-export const SUPPORTED_LANGUAGE_CODES = Object.keys(LANG_INFO) as LanguageCode[];
+export const SUPPORTED_LANGUAGE_CODES: readonly LanguageCode[] = Object.freeze(
+  Object.keys(LANG_INFO)
+) as readonly LanguageCode[];
 
 export function langInfo(code: LanguageCode): LangInfo {
-  return LANG_INFO[code];
+  const info = LANG_INFO[code];
+  if (info === undefined) {
+    throw new RomanizeError(
+      `langInfo: unrecognized language code "${code}". Supported codes: ${SUPPORTED_LANGUAGE_CODES.join(", ")}`
+    );
+  }
+  return info;
 }
 
+// Record<BrahmicScript, true> rather than a plain string array so the
+// compiler -- not just this function's runtime behavior -- enforces that
+// this set stays in sync with the BrahmicScript union: adding a 10th
+// Brahmic script to that type without adding it here is now a type error,
+// not a silently-wrong predicate.
+const BRAHMIC_SCRIPTS: Record<BrahmicScript, true> = {
+  Devanagari: true,
+  Bengali: true,
+  Gurmukhi: true,
+  Gujarati: true,
+  Oriya: true,
+  Tamil: true,
+  Telugu: true,
+  Kannada: true,
+  Malayalam: true,
+};
+
 export function isBrahmicScript(script: ScriptName): script is BrahmicScript {
-  return [
-    "Devanagari", "Bengali", "Gurmukhi", "Gujarati", "Oriya",
-    "Tamil", "Telugu", "Kannada", "Malayalam",
-  ].includes(script);
+  return Object.prototype.hasOwnProperty.call(BRAHMIC_SCRIPTS, script);
 }
