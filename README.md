@@ -168,6 +168,15 @@ incomplete/unreliable, so porting it into this package wouldn't produce
 accurate romanization either — these may be revisited if/when upstream data
 improves.
 
+**Known limitation — a handful of Perso-Arabic characters (`ur-IN`/`ks-IN`/`sd-IN`)
+have no vocab-safe romanization.** A small number of Arabic Supplement/Extended
+letters romanize (matching real uroman) to output outside `[a-z']` — notably
+Sindhi `۽` ("and"), which real uroman itself renders as `&`. Rather than hand
+the aligner text it can't consume, `romanizeWord`/`romanizeWords`/`alignNative`
+throw `RomanizeError` for these words, naming the exact character responsible,
+instead of inventing a non-uroman-matching substitute or failing silently
+further downstream.
+
 The character-level romanization data this package uses is extracted
 directly from [uroman](https://github.com/isi-nlp/uroman) (see
 [`src/romanize/data/README.md`](./src/romanize/data/README.md) for
