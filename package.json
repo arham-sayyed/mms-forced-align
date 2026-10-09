@@ -1,7 +1,7 @@
 {
   "name": "mms-forced-align",
-  "version": "0.2.0",
-  "description": "CTC forced alignment (word-level timestamps) using Meta's MMS forced-aligner model, in Node.js/TypeScript.",
+  "version": "0.2.1",
+  "description": "Word-level timestamps in Node.js/TypeScript: Meta's MMS forced-aligner model (ONNX) with a TypeScript CTC Viterbi decoder. No Python needed.",
   "type": "commonjs",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,13 +14,15 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "THIRD_PARTY_NOTICES.md"
   ],
   "engines": {
     "node": ">=18"
   },
   "scripts": {
     "build": "tsup",
+    "prepublishOnly": "npm run build",
     "test": "vitest run",
     "test:unit": "vitest run --exclude test/model.inference.test.ts --exclude test/align.golden.test.ts",
     "test:watch": "vitest",
@@ -33,16 +35,30 @@
     "mms",
     "captions",
     "subtitles",
-    "speech-to-text",
     "karaoke",
     "word-timestamps",
     "indic-languages",
     "romanization",
     "hindi",
-    "devanagari"
+    "devanagari",
+    "typescript",
+    "nodejs",
+    "javascript",
+    "onnx",
+    "onnxruntime",
+    "speech-alignment",
+    "audio-alignment",
+    "word-level-timestamps",
+    "torchaudio",
+    "meta-mms",
+    "subtitle-sync",
+    "hinglish"
   ],
   "license": "MIT",
-  "author": "Arham Sayyed",
+  "author": {
+    "name": "Arham Sayyed",
+    "url": "https://github.com/arham-sayyed"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arham-sayyed/mms-forced-align.git"
