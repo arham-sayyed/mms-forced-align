@@ -2,11 +2,11 @@
 Generate golden test fixtures for align.golden.test.ts from a Python
 reference alignment (torchaudio.pipelines.MMS_FA).
 
-This is a one-time, local, developer-run tool (spec §6) — it is not part
+This is a one-time, local, developer-run tool — it is not part
 of the published package and does not run in CI. Run it against your own
 short audio clip + transcript to (re)generate test/fixtures/*.wav and
-test/fixtures/*.json. The fixtures this repo ships are intentionally NOT
-derived from any third-party recording; bring your own audio.
+test/fixtures/*.json. No audio fixtures are checked into this repo, so
+nothing here is derived from a third-party recording; bring your own audio.
 
 Usage:
     python scripts/generate_fixtures.py \\
@@ -35,7 +35,11 @@ PAD_SECONDS = 0.15
 
 
 def clean(word: str) -> str:
-    return re.sub(r"[^\w']", "", word).lower()
+    # Model vocab is a-z plus apostrophe only. \w would keep digits and "_".
+    cleaned = re.sub(r"[^A-Za-z']", "", word).lower()
+    if not cleaned:
+        raise ValueError(f"word {word!r} has no alignable letters; remove it from the transcript")
+    return cleaned
 
 
 def load_waveform(path, target_sr):
