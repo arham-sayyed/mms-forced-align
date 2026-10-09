@@ -1,7 +1,7 @@
 {
   "name": "mms-forced-align",
   "version": "0.2.1",
-  "description": "Word-level timestamps in Node.js/TypeScript: Meta's MMS forced-aligner model (ONNX) with a TypeScript CTC Viterbi decoder. No Python needed.",
+  "description": "Forced alignment for JavaScript, TypeScript and Node.js: word-level timestamps from audio + transcript for captions, subtitles and karaoke. Meta MMS (wav2vec2) via ONNX Runtime with a CTC Viterbi decoder. Hindi, Hinglish and 20 Indic languages. No Python.",
   "type": "commonjs",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
