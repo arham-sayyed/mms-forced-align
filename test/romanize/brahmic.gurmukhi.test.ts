@@ -31,7 +31,7 @@ describe("romanizeBrahmicWord: Gurmukhi (pan) -- ADDAK before aspirated consonan
     ["ਅੱਧ", "addha"],
     ["ਅੱਭ", "abbha"],
     ["ਅੱਠ", "atttha"],
-    // Final-review regression coverage: ADDAK before NYA/YYA/YA. Already
+    // Regression coverage: ADDAK before NYA/YYA/YA. Already
     // correct in the current engine (verified against real uroman, python
     // `uroman` package, lcode="pan") -- no code change, just closing a
     // fixture gap.

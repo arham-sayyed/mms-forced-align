@@ -21,7 +21,7 @@ describe("romanizeBrahmicWord: Tamil (tam)", () => {
  * preceding syllable and never take a default abugida vowel.
  *
  * This block lives in the Tamil test file because Tamil is where the rule was
- * found (Task 9: அஃது was this engine's last remaining Tamil discrepancy
+ * found (அஃது was this engine's last remaining Tamil discrepancy
  * against real uroman, out of 1023 differentially-tested words), but the rule
  * is script-agnostic, so the two non-Tamil characters it also fixes are
  * covered here alongside it rather than split across files.

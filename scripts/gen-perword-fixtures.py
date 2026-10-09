@@ -21,8 +21,7 @@ BRAHMIC = {"Devanagari", "Bengali", "Gurmukhi", "Gujarati", "Oriya", "Tamil", "T
 # are whole-sentence golden fixtures with hand-checked `uroman_output`, while
 # these only ever feed the per-word generator below.
 #
-# The Tamil block was added in Task 9. Tamil is the highest-risk script in
-# this plan, and its original 9 fixture words all came from that one shared
+# Tamil is the highest-risk script here, and its original 9 fixture words all came from that one shared
 # sentence. These 20 sentences were chosen to exercise the parts of Tamil the
 # original sentence never touched: every geminate cluster type (க்க ச்ச ட்ட
 # த்த ப்ப ற்ற ன்ன ள்ள ல்ல ண்ண), the nasal+stop clusters (ங்க ஞ்ச ண்ட ந்த ம்ப
@@ -30,19 +29,18 @@ BRAHMIC = {"Devanagari", "Bengali", "Gurmukhi", "Gujarati", "Oriya", "Tamil", "T
 # coda position, word-final consonants, the grantha letters ஜ ஸ ஷ ஹ ஶ, and
 # the aytam ஃ (both standalone and in the ஃப/ஃஜ digraphs).
 #
-# Every other language's block was added in Task 14, which is this plan's
-# designated hardening pass. Those sentences are ordinary prose chosen for
+# Every other language's block is a hardening pass. Those sentences are ordinary prose chosen for
 # character coverage rather than topic; in particular each Brahmic language
 # that has them contributes words with:
 #   * VOCALIC vowel signs (ृ ৃ ૃ ୃ ృ ೃ ൃ), e.g. कृपया / সংস্কৃতি / કૃપા /
 #     କୃଷକ / కృష్ణా / ಕೃಷಿ / കൃഷി and the ॠ/ऋ independent letters. Before
-#     Task 14 these produced "kr" where uroman gives "kra"; they were the
+#     that pass these produced "kr" where uroman gives "kra"; they were the
 #     single largest family of known mismatches (~160-200 per script).
 #   * a word-final NYA/YYA (ঞ ঞ য় ୟ य़), whose table entry carries a baked-in
 #     default vowel, e.g. Bengali সময় / বিষয় / হয়.
 #   * a word-final consonant cluster (C + virama + C), e.g. Bengali ছাত্র /
 #     যত্ন / চিহ্ন / রাষ্ট্র and Assamese যত্ন -- the schwa-deleting-language
-#     case of Task 4's `precededByVirama` rule, which until Task 14 had never
+#     case of the `precededByVirama` rule, which until then had never
 #     been exercised outside Devanagari.
 #   * nukta forms, candrabindu, anusvara, visarga and (Gurmukhi) ADDAK.
 #
@@ -53,7 +51,7 @@ BRAHMIC = {"Devanagari", "Bengali", "Gurmukhi", "Gujarati", "Oriya", "Tamil", "T
 # character coverage, and it is better to write fewer sentences we are
 # confident are idiomatic than many we are not.
 EXTRA_SAMPLES = [
-    # --- Tamil (Task 9) ---------------------------------------------------
+    # --- Tamil -----------------------------------------------------------
     ("ta", "tam", "Tamil", "தமிழ் மொழி உலகின் மிகப் பழமையான மொழிகளில் ஒன்று."),
     ("ta", "tam", "Tamil", "நான் நேற்று சென்னைக்குச் சென்றேன்."),
     ("ta", "tam", "Tamil", "அவர் ஒரு நல்ல ஆசிரியர் என்று அனைவரும் சொல்கிறார்கள்."),
@@ -75,7 +73,7 @@ EXTRA_SAMPLES = [
     ("ta", "tam", "Tamil", "ஷாப்பிங் மாலில் மக்கள் கூட்டம் அதிகமாக இருந்தது."),
     ("ta", "tam", "Tamil", "ஹரி தினமும் காலையில் உடற்பயிற்சி செய்கிறான்."),
 
-    # --- Hindi (Task 14) --------------------------------------------------
+    # --- Hindi -----------------------------------------------------------
     ("hi", "hin", "Devanagari", "कृपया अपना नाम और पता यहाँ लिखिए।"),
     ("hi", "hin", "Devanagari", "भारत की संस्कृति बहुत प्राचीन और विविध है।"),
     ("hi", "hin", "Devanagari", "वृक्षों की छाया में बैठकर उसने पुस्तक पढ़ी।"),
@@ -149,7 +147,7 @@ EXTRA_SAMPLES = [
     ("sa", "san", "Devanagari", "ॐ शान्तिः शान्तिः शान्तिः।"),
     # Vedic Sanskrit, Rigveda 1.1.1 -- real accented text, and the only
     # realistic source of the Devanagari stress signs U+0951 UDATTA and
-    # U+0952 ANUDATTA. Those romanize to the empty string, which (Task 14)
+    # U+0952 ANUDATTA. Those romanize to the empty string, which
     # makes the *following* consonant word-initial for uroman's
     # is_at_start_of_word and so keeps its default vowel even in a
     # schwa-deleting language. No non-Vedic sentence can reach that rule.
@@ -201,7 +199,7 @@ EXTRA_SAMPLES = [
     # --- Bodo -------------------------------------------------------------
     # बर' / मोन' etc. carry the ASCII apostrophe Bodo uses for /ɯ/. It is
     # preserved by cleanNativeWord and romanizes to "'" -- see brahmic.ts's
-    # apostrophe branch, added in Task 14 after this fixture set first hit it.
+    # apostrophe branch, added after this fixture set first hit it.
     ("brx", "brx", "Devanagari", "बर' राव आसामनि मुलुगनि राव।"),
     ("brx", "brx", "Devanagari", "आं दिनै बाजारआव थांगोन।"),
     ("brx", "brx", "Devanagari", "फिसाफोर फरायसालियाव फरायो।"),
@@ -375,14 +373,14 @@ EXTRA_WORDS = [
     # candrabindu fallback (Devanagari/Bengali/Oriya candrabindu all have
     # real table entries; Tamil/Telugu/Kannada/Malayalam have no such
     # character). Real uroman: માઁ -> "maa", હુઁ -> "hu" -- i.e. the
-    # candrabindu contributes nothing at all, which is what Task 14 fixed.
+    # candrabindu contributes nothing at all.
     ("gu", "guj", "Gujarati", "માઁ"),
     ("gu", "guj", "Gujarati", "હુઁ"),
     # Gurmukhi ADAK BINDI U+0A01, the same fallback for Punjabi. Also rare in
     # modern print. Real uroman: ਕਁ -> "ka".
     ("pa", "pan", "Gurmukhi", "ਮਾਁ"),
     # Bengali/Assamese word-final conjunct clusters (C + virama + C). These
-    # are the schwa-deleting-script half of Task 4's precededByVirama rule:
+    # are the schwa-deleting-script half of the precededByVirama rule:
     # ben/asm delete a word-final schwa, but NOT when the final consonant
     # follows a virama. Real uroman: ছাত্র -> "chhaatra" (not "chhaatr"),
     # যত্ন -> "yatna", চিহ্ন -> "chihna", রাষ্ট্র -> "raassttra".
@@ -393,7 +391,7 @@ EXTRA_WORDS = [
     ("bn", "ben", "Bengali", "মন্ত্র"),
     ("as", "asm", "Bengali", "যত্ন"),
     ("as", "asm", "Bengali", "ছাত্ৰ"),
-    # Bengali word-final anusvara (this plan's "Known gaps" #4). এবং -> the
+    # Bengali word-final anusvara. এবং -> the
     # anusvara is U+0982, whose own table entry is "+ng"; there is no
     # word-position rule involved. Sampled here in every position -- final,
     # medial, and before a consonant -- to confirm that.
@@ -405,7 +403,7 @@ EXTRA_WORDS = [
     # Bengali/Devanagari YYA and the nukta-composed য়/य़ spellings of it, in
     # word-final position after a vowel sign. YYA's table entry carries a
     # baked-in default vowel ("yya"), which word-final schwa deletion must
-    # NOT strip -- see deletesFinalSchwa's Task 14 note.
+    # NOT strip -- see the NOTE on deletesFinalSchwa in brahmic.ts.
     ("bn", "ben", "Bengali", "সময়"),
     ("bn", "ben", "Bengali", "বিষয়"),
     ("bn", "ben", "Bengali", "হয়"),

@@ -14,7 +14,7 @@ describe("detectScript", () => {
   it("detects Arabic", () => expect(detectScript("آج")).toBe("Arabic"));
   it("detects Latin", () => expect(detectScript("hello")).toBe("Latin"));
   it("detects Latin for a word with an apostrophe", () => expect(detectScript("don't")).toBe("Latin"));
-  // Task 14: the apostrophe is Script=Common and must not make a native-script
+  // The apostrophe is Script=Common and must not make a native-script
   // word "Mixed" -- Bodo writes /ɯ/ with one (बर' = "Boro").
   it("detects Devanagari for a Bodo word with an apostrophe", () =>
     expect(detectScript("बर'")).toBe("Devanagari"));

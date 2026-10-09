@@ -39,7 +39,7 @@ const ALPHABETIC = /\p{L}/u;
  *      which romanizes to "") or ends in a non-letter (e.g. the hamza
  *      letters' "'"), `i` *is* start-of-word.
  *
- * This was found (Task 10 review) by an adversarial probe: the original
+ * This was found by an adversarial probe: the original
  * implementation only ever fired startOfWordOverrides at literal index 0,
  * so a word like "sukun + ای" (a combining mark immediately followed by the
  * "ای" -> "i" sequence) wrongly produced "ai" instead of real uroman's "i" --
@@ -82,8 +82,8 @@ function isAtStartOfWordPosition(
  * in logical (unshaped) order, so no positional letter-form handling is
  * needed either.
  *
- * Two exceptions to "flat and context-free" were found during Task 10's
- * verification (an exhaustive differential sweep against real uroman) and
+ * Two exceptions to "flat and context-free" were found during an
+ * exhaustive differential sweep against real uroman and
  * are handled below:
  *
  *  - multiCharOverrides: a small number of 2-character sequences romanize

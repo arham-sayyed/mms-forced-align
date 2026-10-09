@@ -26,7 +26,7 @@ describe("romanizeWord", () => {
     expect(() => romanizeWord("আজ", "hi-IN")).toThrow(RomanizeError);
   });
 
-  // Task 14: a Bodo word carrying the apostrophe Bodo writes /ɯ/ with. This
+  // A Bodo word carrying the apostrophe Bodo writes /ɯ/ with. This
   // exercises three layers at once -- cleanNativeWord keeps the apostrophe,
   // detectScript must not call the word "Mixed" because of it, and
   // romanizeBrahmicWord must romanize it to "'". Verified against real
@@ -35,7 +35,7 @@ describe("romanizeWord", () => {
     expect(romanizeWord("बर'", "brx-IN")).toBe("bar'");
   });
 
-  // Task 14 review: ॐ / ௐ used to throw, because the extractor scoped each
+  // ॐ / ௐ used to throw, because the extractor scoped each
   // script's character set to UnicodeDataProps.txt's incomplete `::char`
   // list and so filtered out UnicodeDataOverwrite.txt's `::u 0950 ::r om`.
   // Verified against real uroman: "om" for hin, san and tam alike.
@@ -70,7 +70,7 @@ describe("romanizeWord", () => {
     expect(() => romanizeWord("आज", "xx-IN" as any)).toThrow(RomanizeError);
   });
 
-  // Final-review finding #1: Sindhi "۽" (U+06FD) is a real, uroman-verified
+  // Sindhi "۽" (U+06FD) is a real, uroman-verified
   // word-forming character (cleanNativeWord whitelists it, arabic.json maps
   // it to real uroman's own output "&") but "&" is not vocab-safe ([a-z']
   // only, see src/vocab.json). romanizeWord must refuse to hand this to the
@@ -114,8 +114,8 @@ describe("romanizeWords: matches real uroman output on full golden sentences", (
     if (!bcp47) continue; // sat, mni out of scope
     const words = fx.input.split(/\s+/).map((w) => w.replace(/[।॥.,!?؟،؛]+$/gu, "")).filter(Boolean);
 
-    // Final-review finding #1: this fixture's sentence contains "۽" (Sindhi
-    // "and"), whose real-uroman romanization "&" is not vocab-safe.
+    // This fixture's sentence contains "۽" (Sindhi "and"), whose
+    // real-uroman romanization "&" is not vocab-safe.
     // romanizeWord now throws RomanizeError for it (see the dedicated "۽"
     // test above) rather than passing "&" through, so this sentence can no
     // longer be expected to romanize successfully end to end -- verify it

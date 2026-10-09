@@ -93,7 +93,7 @@ export function romanizeWords(words: string[], langCode: LanguageCode): string[]
   const out = words.map((w) => romanizeWord(w, langCode));
   if (out.length !== words.length) {
     // Unreachable given .map()'s semantics, but the invariant is load-bearing
-    // enough (see plan Global Constraints: "zero word loss is non-negotiable")
+    // enough (alignNative's "zero word loss" guarantee depends on it)
     // to assert explicitly rather than trust .map() silently forever.
     throw new RomanizeError(
       `romanizeWords: word count mismatch, got ${out.length} outputs for ${words.length} inputs`

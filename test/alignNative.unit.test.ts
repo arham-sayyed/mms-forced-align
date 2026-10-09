@@ -45,7 +45,7 @@ describe("alignNative", () => {
     expect(alignSpy).toHaveBeenCalledWith(expect.any(Float32Array), 16000, ["aaj"]);
   });
 
-  // Final-review finding #3: Aligner is an exported public interface
+  // Aligner is an exported public interface
   // (src/align.ts) -- a caller-supplied custom implementation returning a
   // short/long timings array must not silently mis-index nativeWords[i].
   // The bundled align() guarantees the count via decode.ts's span-count

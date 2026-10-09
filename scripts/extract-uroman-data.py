@@ -25,7 +25,7 @@ BRAHMIC_SCRIPTS = [
 #
 # That list is NOT complete. The Arabic branch at the bottom of this file
 # already had to stop trusting it (it omits every harakat/diacritic); the
-# Brahmic branch had the same defect and it went unnoticed until Task 14's
+# Brahmic branch had the same defect and it went unnoticed until a later
 # review: U+0950 DEVANAGARI OM and U+0BD0 TAMIL OM are absent from the
 # Devanagari/Tamil `::char` lists, so the `::u 0950 ::r om` entry that DOES
 # exist in UnicodeDataOverwrite.txt (line 34) was being filtered out and never
@@ -73,7 +73,7 @@ def parse_double_colon_line(line):
     the raw text between the end of its key and the start of the next marker
     (or end of line). This is deliberately simpler than an earlier lookahead-
     based regex (`::(\\S+)\\s+(.*?)(?=\\s+::\\S+\\s|\\s*$)`), which had two real
-    bugs found while extracting the Arabic block's data (Task 10):
+    bugs found while extracting the Arabic block's data:
       1. It required at least one whitespace char after the key before the
          value could start, so a genuinely *empty* value immediately followed
          by a multi-word ::comment (e.g. `::s ْ ::t  ::comment ARABIC
@@ -397,7 +397,7 @@ def main():
 
     # --- Arabic block (Perso-Arabic: Urdu/Kashmiri/Sindhi) -----------------
     #
-    # Task 10 investigation found that romanization-table-arabic-block.txt
+    # Investigation found that romanization-table-arabic-block.txt
     # (the file this extraction originally used exclusively) is NOT actually
     # loaded by real uroman at runtime at all: uroman.py's
     # load_resource_files() loads only romanization-auto-table.txt (provenance

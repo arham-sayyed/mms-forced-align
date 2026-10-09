@@ -21,8 +21,8 @@ interface LangInfo {
   script: ScriptName;
 }
 
-// Verified against real uroman output (test/fixtures/romanize/golden-sentences.json)
-// for all 20 -- see plan Global Constraints for the full mapping rationale.
+// Verified against real uroman output (test/fixtures/romanize/) for all 20
+// Indic codes.
 const LANG_INFO: Record<LanguageCode, LangInfo> = {
   "hi-IN": { lcode: "hin", script: "Devanagari" },
   "mr-IN": { lcode: "mar", script: "Devanagari" },

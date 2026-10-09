@@ -153,7 +153,7 @@ interface Unit {
  * but keeps the schwa, while Bengali/Assamese (ben/asm) are Bengali-script
  * but still delete it.
  *
- * NOTE (Task 14): the two deleting branches `return rom` -- the *raw*
+ * NOTE: the two deleting branches `return rom` -- the *raw*
  * romanization the table gave for this span -- and NOT `base_rom`, the bare
  * consonant that resolveLetterUnit() stripped a baked-in default vowel off
  * of. For ordinary letters the two are identical ("k" == "k"), which is why
@@ -188,7 +188,7 @@ function deletesFinalSchwa(script: BrahmicScript, lcode: string): boolean {
  */
 
 /**
- * TAMIL / SYLLABLE-POSITION NOTE (Task 9 investigation result).
+ * TAMIL / SYLLABLE-POSITION NOTE.
  *
  * Tamil was expected to need a syllable-position-dependent romanization:
  * its dental/retroflex/alveolar letters ண/ன/ற/ள/ழ/ட have auto-table targets
@@ -225,7 +225,7 @@ function deletesFinalSchwa(script: BrahmicScript, lcode: string): boolean {
  *     uroman therefore does not distinguish ந/ண/ன or ர/ற at all -- they all
  *     romanize the same everywhere, onset or coda.
  *
- * Our extractor already reads UnicodeDataOverwrite.txt (added in Task 5), so
+ * Our extractor already reads UnicodeDataOverwrite.txt, so
  * this engine inherits the correct behaviour with no coda logic at all. This
  * was confirmed by a 1023-word differential run against real uroman covering
  * every Tamil consonant in onset position with all 12 vowel signs, in
@@ -406,7 +406,7 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
     // also not restricted to bare consonants: it matches the leading
     // consonant of a romanization that carries a baked-in default vowel, so
     // ADDAK before ਞ ("nya") doubles the "n" -- ਕੱਞ -> "kannya". Both of
-    // those shapes were mismatches until Task 14's differential sweep;
+    // those shapes were mismatches until a differential sweep against uroman;
     // porting uroman's literal character class fixes all three.
     if (c === "ੱ") {
       const nextC = codepoints[i + 1];
@@ -418,7 +418,7 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
         // really does double -- verified against real uroman:
         // ਕੱਂਕ -> "kammk", ਕੱਂ -> "kamm", ਕੱੰ -> "kamm", ਕੱੰਕ -> "kammk",
         // ਸਕੱਂਕ -> "sakmmk". An earlier `isLetter &&` gate here suppressed
-        // that (6 mismatches in Task 14's review sweep).
+        // that (6 mismatches in a differential sweep against uroman).
         const cleanNext = stripRomTail(nextRawRom).rom;
         if (ADDAK_DOUBLES.test(cleanNext)) {
           // The ADDAK's *emitted* romanization is the doubled consonant, but
@@ -528,8 +528,8 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
       //     કઁ (guj) -> "ka", હુઁ (guj) -> "hu", માઁ (guj) -> "maa",
       //     ਕਁ (pan) -> "ka". (Devanagari/Bengali/Oriya candrabindu never
       //     reach here: they have real "+m"/"+n" entries.) This replaces a
-      //     hardcoded per-script candrabindu list that Task 5 had flagged as
-      //     wrong for exactly these two scripts.
+      //     hardcoded per-script candrabindu list that was wrong for
+      //     exactly these two scripts.
       //   * Devanagari GRAVE/ACUTE ACCENT, Gurmukhi UDAAT and YAKASH,
       //     Gujarati SUKUN/SHADDA/MADDAH, Oriya SIGN OVERLINE, ...
       // Note an empty romanization is not the same as no span at all: it
@@ -646,8 +646,8 @@ export function romanizeBrahmicWord(word: string, script: BrahmicScript, lcode: 
   return out;
 }
 
-// (The per-script candrabindu table that used to live here is gone: Task 14
-// replaced it with the general "unromanized nonspacing mark -> empty string"
+// (The per-script candrabindu table that used to live here is gone: it was
+// replaced by the general "unromanized nonspacing mark -> empty string"
 // rule in romanizeBrahmicWord above, which is what real uroman actually does
 // and which covers the Gurmukhi/Gujarati candrabindus the old hardcoded "n"
 // got wrong, plus five other scripts' worth of marks it never listed.)

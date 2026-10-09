@@ -30,8 +30,7 @@ function scriptOfCodepoint(cp: number): ScriptName | null {
  * cleanNativeWord deliberately keeps it. It used to be classified as Latin
  * here, which was fine for "don't" but wrong for Bodo, which writes /ɯ/ with
  * an apostrophe -- बर' ("Boro", the language's own name) came out "Mixed" and
- * romanizeWord threw on it (found in Task 14, when Bodo fixture sentences
- * first included the word). Treating it as a *weak* Latin signal keeps both
+ * romanizeWord threw on it. Treating it as a *weak* Latin signal keeps both
  * behaviours: any real letter in the word decides the script, and the
  * apostrophe only decides when nothing else does.
  */

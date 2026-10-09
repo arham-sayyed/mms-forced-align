@@ -14,7 +14,7 @@ with open("test/fixtures/romanize/golden-sentences.json", encoding="utf-8") as f
 # Extra Perso-Arabic source sentences, same rationale as the Brahmic
 # generator's EXTRA_SAMPLES: golden-sentences.json has exactly one sentence
 # per language and they are all the same sentence translated, which
-# under-exercises the script. Added in Task 14.
+# under-exercises the script.
 EXTRA_SAMPLES = [
     ("ur", "urd", "اردو زبان بہت خوبصورت ہے۔"),
     ("ur", "urd", "آج موسم بہت اچھا ہے۔"),
@@ -43,7 +43,7 @@ EXTRA_SAMPLES = [
 ]
 
 # Word-level probes for the one context-dependent rule in this engine:
-# uroman's `::use-only-at-start-of-word` entry "ای" -> "i". Task 10's review
+# uroman's `::use-only-at-start-of-word` entry "ای" -> "i". A review
 # established (against real uroman) that "start of word" is NOT literal index
 # 0 -- it is a check on the character/romanization *immediately* before the
 # position -- but that finding was verified with throwaway scripts and never

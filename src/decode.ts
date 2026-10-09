@@ -17,7 +17,7 @@ export function buildExtendedSequence(tokenIds: number[], blankId: number): numb
 const NEG_INF = -Infinity;
 
 /**
- * CTC forced-alignment Viterbi decode (spec §4). Returns, for every frame,
+ * CTC forced-alignment Viterbi decode. Returns, for every frame,
  * which position in the extended label sequence was active — the caller
  * collapses this into letter/word spans.
  */
@@ -99,7 +99,7 @@ export interface FrameSpan {
 
 /**
  * Converts extended-sequence state-per-frame into merged per-token frame spans.
- * Per spec §4 step 4: even state index -> blank (no letter), odd state index `s` ->
+ * Even state index -> blank (no letter), odd state index `s` ->
  * token index `(s-1)/2`. Blank/token parity is a property of buildExtendedSequence's
  * layout, not of the blankId value, so no blankId parameter is needed here.
  */
@@ -159,7 +159,7 @@ export function groupIntoWordSpans(
   return wordSpans;
 }
 
-/** Converts a frame index to seconds. Defaults match this model's known stride (spec §4/§6). */
+/** Converts a frame index to seconds. Default stride is 320 samples/frame (wav2vec2); align() passes the clip's measured ratio instead. */
 export function framesToSeconds(
   frame: number,
   samplesPerFrame: number = 320,

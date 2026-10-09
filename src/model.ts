@@ -66,7 +66,7 @@ export async function ensureModelDownloaded(
   return localPath;
 }
 
-/** Wav2Vec2FeatureExtractor's zero_mean_unit_var_norm, replicated exactly (spec-verified formula). */
+/** Wav2Vec2FeatureExtractor's zero_mean_unit_var_norm, replicated exactly: (x - mean) / sqrt(var + 1e-7). */
 export function normalizeWaveform(waveform: Float32Array): Float32Array {
   const n = waveform.length;
   let mean = 0;
