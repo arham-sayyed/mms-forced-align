@@ -1,8 +1,8 @@
 # Golden fixtures
 
-This directory is intentionally empty in the repo — golden fixtures for
-`test/align.golden.test.ts` are generated locally from your own short audio
-clip + transcript, not checked in. `align.golden.test.ts` discovers whatever
+The audio golden fixtures for `test/align.golden.test.ts` are intentionally
+not checked in (only the `romanize/` text fixtures are). Generate them locally
+from your own short audio clip + transcript. `align.golden.test.ts` discovers whatever
 `*.wav`/`*.json` pairs exist here at test-run time and skips itself entirely
 if none do, so a fresh clone's `npm test` doesn't fail for missing fixtures.
 
